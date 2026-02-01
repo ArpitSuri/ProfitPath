@@ -8,7 +8,7 @@ import HowWeWork from "../components/MediuamBusinessComponents/MediumHowWeWork"
 import WhoAreWe from "../components/MediuamBusinessComponents/MediumWhoAreWe"
 import ProcessSection from "../components/MediuamBusinessComponents/MiddleProcessSection"
 import MiddleShowcase from "../components/MediuamBusinessComponents/MiddleShowCase"
-import RoiPage from "../components/ROIPage"
+import ROIPage from "../components/ROIPage"
 import GrowthExperts from "../components/SmallBusinessComponents/GrowthExpert"
 import IndustriesSection from "../components/SmallBusinessComponents/IndustrySection"
 import ResultsStats from "../components/SmallBusinessComponents/ResultStats"
@@ -27,7 +27,7 @@ const MediumBusinessPage = () => {
             <CompanyTray />
             <ProcessSection />
             <GrowthExperts />
-            <RoiPage />
+            <ROIPage />
             <IndustriesSection />
             <ResultsStats />
             <FeatureShowcase />

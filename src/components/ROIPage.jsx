@@ -51,7 +51,7 @@ export default ROIPage
 
 
 
-// const RoiPage = () => {
+// const ROIPage = () => {
 //     return (
 //         <section className="relative w-full min-h-screen flex items-center bg-[#0a0a0a] overflow-hidden">
             
@@ -126,4 +126,4 @@ export default ROIPage
 //     );
 // };
 
-// export default RoiPage;
+// export default ROIPage;
