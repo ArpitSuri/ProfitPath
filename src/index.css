@@ -1,0 +1,17 @@
+/* 1. MUST BE FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+/* 2. TAILWIND IMPORT */
+@import "tailwindcss";
+
+/* 3. YOUR THEME CONFIG */
+@theme {
+    --font-questrial: "Questrial", sans-serif;
+    --font-sans: "Questrial", sans-serif;
+}
+
+/* 4. ANY OTHER CUSTOM CSS */
+:root {
+    /* You can keep this, but the @theme block above handles Tailwind classes */
+    font-family: "Questrial", sans-serif;
+}

@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 4px;
+}
+
+@keyframes tray-scroll {
+  0% {
+    transform: tranzincX(0);
+  }
+
+  100% {
+    transform: tranzincX(-50%);
+  }
+}
+
+.animate-tray-scroll {
+  animation: tray-scroll 40s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* Optional: Pause on hover so people can read logos */
+.animate-tray-scroll:hover {
+  animation-play-state: paused;
+}
+.ease-expo {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
