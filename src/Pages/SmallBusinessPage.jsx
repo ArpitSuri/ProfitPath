@@ -3,7 +3,7 @@ import ContactSection from "../components/HomePageComponents/ContactSection"
 import FeatureShowcase from "../components/HomePageComponents/FeatureShowCase"
 import Footer from "../components/HomePageComponents/Footer"
 import Navbar from "../components/HomePageComponents/Navbar"
-import ROIPage from "../components/ROIPage"
+import ROIComponent from "../components/ROIPage"
 import MiddleShowcase from "../components/SmallBusinessComponents/FeatureShowCase"
 import GrowthExperts from "../components/SmallBusinessComponents/GrowthExpert"
 import IndustriesSection from "../components/SmallBusinessComponents/IndustrySection"
@@ -23,7 +23,7 @@ const SmallBusinessPage = () => {
             <TargetingOrbit />
             <IndustriesSection />
             <GrowthExperts />
-            <ROIPage />
+            <ROIComponent />
             <CaseStudyCarousel />
             <ResultsStats />
             <ContactSection />

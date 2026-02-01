@@ -5,7 +5,7 @@ import ROICalculator from "./ROICalculator";
 
 import React from 'react'
 
-const ROIPage = () => {
+const ROIComponent= () => {
   return (
     <div>
           <div className="relative w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-6 py-20 gap-12">
@@ -47,7 +47,7 @@ const ROIPage = () => {
   )
 }
 
-export default ROIPage
+export default ROIComponent
 
 
 

@@ -6,10 +6,10 @@ import MiddleShowcase from '../components/MediuamBusinessComponents/MiddleShowCa
 import WhoAreWe from '../components/MediuamBusinessComponents/MediumWhoAreWe'
 import GrowthExperts from '../components/SmallBusinessComponents/GrowthExpert'
 import HowWeWork from '../components/MediuamBusinessComponents/MediumHowWeWork'
-import ROIPage from './ROIPage'
 import IndustriesSection from '../components/SmallBusinessComponents/IndustrySection'
 import CaseStudyCarousel from '../components/CaseStudyCrousal'
 import ContactSection from '../components/HomePageComponents/ContactSection'
+import ROIComponent from '../components/ROIPage'
 const LargeBusinessPage = () => {
   return (
       <main className="bg-black text-white overflow-x-hidden">
@@ -19,7 +19,7 @@ const LargeBusinessPage = () => {
         <WhoAreWe />
         <GrowthExperts />
         <HowWeWork />
-        <ROIPage />
+        <ROIComponent />
         <IndustriesSection />
         <CaseStudyCarousel />
         <ContactSection />
