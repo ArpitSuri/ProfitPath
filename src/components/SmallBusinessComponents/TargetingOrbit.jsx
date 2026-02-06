@@ -10,7 +10,7 @@ const items = [
 
 const TargetingOrbit = () => {
     return (
-        <section className="w-full min-h-[600px] bg-black flex items-center justify-center py-20 px-10 overflow-hidden">
+        <section className="w-full min-h-[600px] flex items-center justify-center py-20 px-10 overflow-hidden">
             <div className="max-w-[1200px] w-full flex flex-col lg:flex-row items-center justify-between gap-20">
 
                 {/* Left Side Text */}

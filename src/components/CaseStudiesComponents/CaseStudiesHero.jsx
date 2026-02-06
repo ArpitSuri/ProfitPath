@@ -45,50 +45,7 @@ export default function CaseStudiesHero() {
                     </div>
 
                     {/* RIGHT VIDEO PREVIEW - Listeners moved here */}
-                    <div
-                        className="md:w-1/2 w-full relative group cursor-pointer"
-                        onMouseEnter={() => videoRef.current?.play()}
-                        onMouseLeave={() => videoRef.current?.pause()}
-                        onClick={() => setOpen(true)}
-                    >
-                        <video
-                            ref={videoRef}
-                            src="/preview.mp4"
-                            muted
-                            loop
-                            playsInline
-                            preload="auto"
-                            className="rounded-xl w-full object-cover "
-                        />
-
-                        {/* Hover Overlay - Added pointer-events-none so it doesn't block clicks */}
-                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center pointer-events-none">
-                            {/* Animated Container */}
-                            <div className="transform scale-90 group-hover:scale-100 transition-transform duration-500 ease-out">
-                                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-full shadow-2xl">
-
-                                    {/* Text */}
-                                    <span className="font-questrial text-white font-medium tracking-wide uppercase text-sm">
-                                        Success Stories
-                                    </span>
-
-                                    {/* Play Icon Circle */}
-                                    <div className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center pl-1 shadow-lg">
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                            className="w-5 h-5"
-                                        >
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 </div>
             </section>
 
             {/* MODAL */}

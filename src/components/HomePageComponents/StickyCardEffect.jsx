@@ -28,10 +28,10 @@ const cards = [
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                     {[
                         {
-                            icon: "🎨", title: "No more missed opportunities.", desc: "Without a steady stream of leads, it’s impossible to gain momentum. Flowd keeps your funnel flowing." },
+                            icon: "🎨", title: "No more missed opportunities.", desc: "Without a steady stream of leads, it’s impossible to gain momentum. Profit Path keeps your funnel flowing." },
                         { icon: "⚡", title: "Your team just got two-thirds bigger.", desc: "Our outreach specialists become an extension of your team. You focus on closing." },
-                        { icon: "🛡️", title: "Save time. Close faster.", desc: "Flowd doesn’t just toss leads over the fence—we nurture them until the sales meeting." },
-                        { icon: "📱", title: "Right people, right time.", desc: "Flowd’s database of half a billion data points holds the leads you need to grow." },
+                        { icon: "🛡️", title: "Save time. Close faster.", desc: "Profit Path doesn’t just toss leads over the fence—we nurture them until the sales meeting." },
+                        { icon: "📱", title: "Right people, right time.", desc: "Profit Path’s database of half a billion data points holds the leads you need to grow." },
                     ].map((item, i) => (
                         <div
                             key={i}
@@ -83,9 +83,9 @@ const cards = [
                 {/* RIGHT SIDE: Styled List Items */}
                 <div className="flex flex-col gap-4 md:gap-6 w-full">
                     {[
-                        { title: "Find them through Flowd.", desc: "We use our database to target key decision-makers with the authority and budget to act with 94% of sales meetings sat." },
-                        { title: "Our experts, your experts.", desc: "Sales prospecting needs specialist skills many in-house teams lack. Flowd provides expert support with decades of combined sales experience." },
-                        { title: "We open, you close.", desc: "ISalespeople spend only 34% of their time selling. Flowd delivers high-quality, ready-to-close leads straight into your CRM, freeing up time to close more deals." },
+                        { title: "Find them through Profit Path.", desc: "We use our database to target key decision-makers with the authority and budget to act with 94% of sales meetings sat." },
+                        { title: "Our experts, your experts.", desc: "Sales prospecting needs specialist skills many in-house teams lack. Profit Path provides expert support with decades of combined sales experience." },
+                        { title: "We open, you close.", desc: "ISalespeople spend only 34% of their time selling. Profit Path delivers high-quality, ready-to-close leads straight into your CRM, freeing up time to close more deals." },
                     ].map((item, i) => (
                         <div
                             key={i}
@@ -127,7 +127,7 @@ const cards = [
                     <div className="space-y-8 max-w-md">
                         {[
                             { title: "Data-Driven Strategy", desc: "We can’t predict the future, but our 10+ years experience can give a confident estimate." },
-                            { title: "Instant Projections", desc: "Use our ROI calculator to find out how Flowd maximises your sales pipeline's potential." }
+                            { title: "Instant Projections", desc: "Use our ROI calculator to find out how Profit Path maximises your sales pipeline's potential." }
                         ].map((point, i) => (
                             <div key={i} className="group">
                                 <p className="text-zinc-400 text-sm md:text-base font-light leading-relaxed mt-2">
@@ -282,7 +282,7 @@ const StackingCards = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="relative w-full bg-black">
+        <div ref={containerRef} className="relative w-full">
             {cards.map((card, index) => (
                 <section
                     key={card.id}
@@ -310,10 +310,8 @@ const StackingCards = () => {
 
 export default StackingCards;
 
-// const StackingCards = () => {
 
 
-//     const containerRef = useRef(null);
 //     const cardsRef = useRef([]);
 
 //     useLayoutEffect(() => {

@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom';
-import { HamburgerIcon } from 'lucide-react'; // Using standard Lucide icons
+import { Menu } from 'lucide-react'; // Changed to 'Menu' as HamburgerIcon is usually an alias
 import AnimatedCalcButton from '../AnimatedCalculatorButton';
 import ROICalculatorButton from '../ROICaluclatorButton';
 import GetInTouchButton from '../GetInTouchButton';
 import ContactModal from '../ContatNavForm';
+
+// Import your logo image
+import logo from '/Logo.png'; // Update this path based on your folder structure
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +19,6 @@ const Navbar = () => {
     const linksRef = useRef([]);
     const navigate = useNavigate();
 
-    // 1. Scroll Logic
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 100);
@@ -25,10 +27,8 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // 2. GSAP Animation Logic for Mobile Menu
     useEffect(() => {
         if (isMenuOpen) {
-            // Prevent background scroll
             document.body.style.overflow = 'hidden';
             gsap.to(menuRef.current, { x: 0, duration: 0.7, ease: "expo.out" });
             gsap.fromTo(linksRef.current,
@@ -85,10 +85,11 @@ const Navbar = () => {
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
             />
+
             {/* --- 1. HERO NAVBAR (Transparent/Initial) --- */}
-            <nav className={`fixed top-0 w-full z-[100] py-8 px-10 flex items-center justify-between transition-all duration-500 ease-in-out ${isScrolled ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
-                <div onClick={() => navigate('/')} className="text-2xl font-black  tracking-wider text-white  cursor-pointer">
-                    PROFITPATH
+            <nav className={`fixed top-0 w-full z-[100]  bg-black py-8 px-10 flex items-center justify-between transition-all duration-500 ease-in-out ${isScrolled ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
+                <div onClick={() => navigate('/')} className="cursor-pointer">
+                    <img src={logo} alt="ProfitPath Logo" className="h-10 w-auto object-contain" />
                 </div>
 
                 <div className="hidden lg:flex items-center gap-8 mr-20">
@@ -105,16 +106,15 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                {/* Mobile Trigger for Hero Nav */}
                 <button onClick={() => setIsMenuOpen(true)} className="lg:hidden text-white flex items-center gap-2 font-bold text-[10px] tracking-wider ">
-                    Menu <HamburgerIcon size={20} />
+                    Menu <Menu size={20} />
                 </button>
             </nav>
 
             {/* --- 2. ACTION NAVBAR (Sticky/Scrolled) --- */}
-            <nav className={`fixed top-0 w-full z-[110] bg-black/90 backdrop-blur-2xl border-b border-white/10 py-4 px-10 flex items-center justify-between transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] shadow-2xl ${isScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
-                <div onClick={() => navigate('/')} className="text-xl font-black  tracking-wider text-zinc-500  cursor-pointer">
-                    ProfitPath.
+            <nav className={`fixed top-0 w-full z-[110] bg-black backdrop-blur-2xl border-b border-white/10 py-4 px-10 flex items-center justify-around transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] shadow-2xl ${isScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+                <div onClick={() => navigate('/')} className="cursor-pointer">
+                    <img src={logo} alt="ProfitPath Logo" className="h-12 w-auto object-contain" />
                 </div>
 
                 <div className="hidden lg:flex items-center gap-8">
@@ -123,7 +123,7 @@ const Navbar = () => {
                             <div key={link.name} className="relative group py-2">
                                 <button
                                     onClick={() => !link.hasDropdown && navigate(link.href)}
-                                    className="text-[13px] tracking-wider text-white/60 hover:text-white transition-colors flex items-center gap-1 cursor-pointer  font-medium"
+                                    className="text-[14px] tracking-wider text-white/60 hover:text-white transition-colors flex items-center gap-1 cursor-pointer font-medium"
                                 >
                                     {link.name} {link.hasDropdown && <span className="text-[10px]">▼</span>}
                                 </button>
@@ -134,14 +134,10 @@ const Navbar = () => {
 
                     <div className="flex items-center gap-4">
                         <ROICalculatorButton />
-                        <div
-                            onClick={() => setIsModalOpen(true)}
-                            className="cursor-pointer"
-                        >
+                        <div onClick={() => setIsModalOpen(true)} className="cursor-pointer">
                             <GetInTouchButton />
                         </div>
                     </div>
-
                 </div>
 
                 <div className="lg:hidden flex items-center gap-4">
@@ -159,10 +155,9 @@ const Navbar = () => {
                 ref={menuRef}
                 className={`fixed inset-0 bg-black z-[150] translate-x-full flex flex-col justify-center px-12 overflow-hidden lg:hidden`}
             >
-                {/* Mobile Menu Header */}
                 <div className="absolute top-0 left-0 w-full p-8 flex items-center justify-between">
-                    <div className="text-2xl font-black  tracking-wider text-white " onClick={() => { navigate('/'); setIsMenuOpen(false); }}>
-                        PROFITPATH
+                    <div onClick={() => { navigate('/'); setIsMenuOpen(false); }} className="cursor-pointer">
+                        <img src={logo} alt="ProfitPath Logo" className="h-10 w-auto object-contain" />
                     </div>
                     <button onClick={() => setIsMenuOpen(false)} className="w-12 h-12 bg-white rounded-full flex items-center justify-center relative">
                         <span className="absolute w-5 h-0.5 bg-black rotate-45"></span>
@@ -170,7 +165,6 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Navigation Links */}
                 <div className="flex flex-col gap-8">
                     {navLinks.map((link, i) => (
                         <div key={link.name} className="overflow-hidden">
@@ -187,7 +181,7 @@ const Navbar = () => {
                                             setOpenDropdown(openDropdown === i ? null : i);
                                         }
                                     }}
-                                    className="text-4xl md:text-7xl font-black text-white  hover:text-zinc-500 transition-colors text-left cursor-pointer"
+                                    className="text-4xl md:text-7xl font-black text-white hover:text-zinc-500 transition-colors text-left cursor-pointer"
                                 >
                                     {link.name}
                                 </button>
@@ -201,7 +195,6 @@ const Navbar = () => {
                                 )}
                             </div>
 
-                            {/* Mobile Dropdown Links */}
                             {link.hasDropdown && openDropdown === i && (
                                 <div className="flex flex-col gap-4 mt-6 ml-4 border-l-2 border-zinc-500/50 pl-6 animate-in slide-in-from-left duration-300">
                                     {link.subLinks.map((sub) => (
@@ -211,7 +204,7 @@ const Navbar = () => {
                                                 navigate(sub.href);
                                                 setIsMenuOpen(false);
                                             }}
-                                            className="text-xl text-left font-bold text-gray-400 hover:text-white transition-colors cursor-pointer  tracking-wider"
+                                            className="text-xl text-left font-bold text-gray-400 hover:text-white transition-colors cursor-pointer tracking-wider"
                                         >
                                             {sub.name}
                                         </button>

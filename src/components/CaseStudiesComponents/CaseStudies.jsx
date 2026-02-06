@@ -609,35 +609,63 @@ const CaseStudyCard = ({ study, isReversed }) => {
     return (
         <div
             ref={cardRef}
-            className={`flex flex-col lg:flex-row items-center gap-16 lg:gap-20 ${isReversed ? 'lg:flex-row-reverse' : ''}`}
+            className={`flex flex-col lg:flex-row items-center gap-16 lg:gap-20 py-20 border-b border-zinc-900/50 ${isReversed ? 'lg:flex-row-reverse' : ''}`}
         >
             {/* Left/Right Text Content */}
             <div className="w-full lg:w-1/2 flex flex-col items-start">
-                <div className="mb-4 px-4 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-zinc-400 text-[9px] font-black  tracking-[0.3em]">
+                {/* Badge */}
+                <div className="mb-4 px-4 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-zinc-400 text-[9px] font-black tracking-[0.3em] uppercase">
                     {study.badge}
                 </div>
-                <h3 className="text-white text-4xl font-black tracking-tighter leading-tight mb-4">
+
+                {/* Company Name */}
+                <h3 className="text-white text-4xl lg:text-5xl font-black tracking-tighter leading-tight mb-4">
                     {study.company}
                 </h3>
+
+                {/* Description */}
                 <p className="text-zinc-500 text-lg font-light leading-relaxed mb-8 max-w-lg">
                     {study.description}
                 </p>
 
-                <div className="flex items-center gap-6">
-                    <a
+                {/* Results Mini-Grid (New Section to show off your data) */}
+                <div className="grid grid-cols-2 gap-6 mb-10 w-full max-w-md">
+                    <div className="flex flex-col">
+                        <span className="text-white text-xl font-bold tracking-tight">{study.results.revenueGrowth.split(' ')[0]}</span>
+                        <span className="text-zinc-600 text-[10px] uppercase tracking-widest font-bold">Equity Sourced</span>
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-white text-xl font-bold tracking-tight">{study.results.leadGen.split(' ')[0]}</span>
+                        <span className="text-zinc-600 text-[10px] uppercase tracking-widest font-bold">Institutional Leads</span>
+                    </div>
+                </div>
+
+                {/* Link and Logo */}
+                <div className="flex items-center gap-8">
+                    {/* <a
                         href={`/case-studies/${study.id}`}
-                        className="group flex items-center gap-3 text-zinc-500 font-bold text-sm  tracking-wider hover:text-white transition-colors duration-300"
+                        className="group flex items-center gap-3 text-white font-bold text-sm tracking-wider hover:text-zinc-400 transition-colors duration-300"
                     >
-                        View Case Study
-                        <span className="text-xl group-hover:tranzinc-x-1 transition-transform">→</span>
-                    </a>
-                    <img src={study.logo} alt={`${study.company} Logo`} className="w-12 h-12 object-contain rounded-full border border-zinc-700 p-1" />
+                        VIEW CASE STUDY
+                        <span className="text-xl transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+                    </a> */}
+
+                    <div className="h-10 w-[1px] bg-zinc-800" /> {/* Divider */}
+
+                    <div className="flex items-center gap-3">
+                        <img
+                            src={study.logo}
+                            alt={`${study.company} Logo`}
+                            className="w-10 h-10 object-contain rounded-full border border-zinc-800 bg-zinc-900 p-1"
+                        />
+                        <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-tighter">{study.location}</span>
+                    </div>
                 </div>
             </div>
 
-            {/* Left/Right Image */}
+            {/* Left/Right Image Container */}
             <div
-                className="w-full lg:w-1/2 relative aspect-video rounded-[2.5rem] overflow-hidden border border-zinc-800 shadow-2xl group cursor-pointer"
+                className="w-full lg:w-1/2 relative aspect-[16/10] rounded-[2rem] overflow-hidden border border-zinc-800/50 shadow-2xl group cursor-pointer bg-zinc-900"
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
             >
@@ -645,10 +673,16 @@ const CaseStudyCard = ({ study, isReversed }) => {
                     ref={imageRef}
                     src={study.image}
                     alt={study.company}
-                    className="w-full h-full object-cover grayscale brightness-75 transition-all duration-700"
+                    className="w-full h-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-1000 ease-out"
                 />
-                {/* Subtle overlay for contrast */}
-                <div className="absolute inset-0 bg-black/20" />
+
+                {/* Overlay with Testimonial on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
+                    <p className="text-white italic text-sm mb-2">"{study.testimonial.quote}"</p>
+                    <p className="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">
+                        — {study.testimonial.author}, {study.testimonial.role}
+                    </p>
+                </div>
             </div>
         </div>
     );

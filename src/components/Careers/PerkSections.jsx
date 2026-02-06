@@ -26,7 +26,7 @@ const PerksSection = () => {
     ];
 
     return (
-        <section className="w-full bg-black text-white py-24 px-6 md:px-12 flex flex-col items-center">
+        <section className="w-full  text-white py-24 px-6 md:px-12 flex flex-col items-center">
             <div className="w-full max-w-7xl">
 
                 {/* HEADING & SUBHEADING */}

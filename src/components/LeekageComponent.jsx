@@ -4,7 +4,7 @@ import LeakageCalculator from './LeekageCalculator';
 
 const LeakageComponent = () => {
     return (
-        <section className="relative w-full min-h-screen flex items-center bg-[#0a0a0a] overflow-hidden py-24">
+        <section className="relative w-full min-h-screen flex items-center overflow-hidden py-24">
             {/* Background Accent */}
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-zinc-500/5 blur-[150px] rounded-full pointer-events-none" />
 

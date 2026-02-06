@@ -7,7 +7,10 @@ import Navbar from "../components/HomePageComponents/Navbar"
 
 const CaseStudiesPage = () => {
     return (
-        <main className="bg-black text-white overflow-x-hidden">
+        <main
+            className="relative min-h-screen text-white overflow-x-hidden bg-center bg-no-repeat bg-cover bg-fixed"
+            style={{ backgroundImage: "url('/bg.png')" }}
+        >
             <Navbar />
             <CaseStudiesHero />
             <CompanyTray />

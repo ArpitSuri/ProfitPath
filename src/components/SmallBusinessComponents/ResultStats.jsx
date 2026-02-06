@@ -29,7 +29,7 @@ const ResultsStats = () => {
     ];
 
     return (
-        <section className="bg-black py-24 px-6 overflow-hidden">
+        <section className=" py-24 px-6 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 {/* Title Section */}
                 <span className="text-[12px] font-black uppercase tracking-[0.4em] text-zinc-600 mb-4 block">

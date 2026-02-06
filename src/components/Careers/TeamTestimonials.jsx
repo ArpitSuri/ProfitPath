@@ -32,7 +32,7 @@ const TeamTestimonials = () => {
     const prev = () => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
     return (
-        <section className="w-full min-h-screen bg-black text-white  px-6 md:px-12 flex flex-col items-center justify-center">
+        <section className="w-full min-h-screen  text-white  px-6 md:px-12 flex flex-col items-center justify-center">
             <div className="w-full max-w-7xl">
 
                 {/* Header */}

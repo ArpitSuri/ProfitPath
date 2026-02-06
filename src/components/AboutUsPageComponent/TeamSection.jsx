@@ -119,7 +119,7 @@ const team = [
 
 const TeamSection = () => {
     return (
-        <section className="relative w-full py-32 bg-[#0a0a0a] overflow-hidden border-t border-zinc-900">
+        <section className="relative w-full py-32 overflow-hidden border-t border-zinc-900">
             <div className="max-w-[1440px] mx-auto px-10 lg:px-24">
 
                 {/* Header Section */}

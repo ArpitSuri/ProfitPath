@@ -32,7 +32,7 @@ const AboutHero = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="relative w-full min-h-[90vh] flex items-center bg-[#0a0a0a] overflow-hidden pt-32 pb-20">
+        <section ref={sectionRef} className="relative w-full min-h-[90vh] flex items-center overflow-hidden pt-32 pb-20">
             {/* Background Texture/Glow */}
             <div className="absolute top-0 right-0 w-150 h-150 bg-indigo-500/5 blur-[120px] rounded-full pointer-events-none" />
 

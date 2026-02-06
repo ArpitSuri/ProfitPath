@@ -19,7 +19,7 @@ const ContactSection = () => {
     ];
 
     return (
-        <section className="bg-black py-24 px-6 min-h-screen flex items-center">
+        <section className=" py-24 px-6 min-h-screen flex items-center">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 w-full">
 
                 {/* LEFT SIDE: Copy & Identity */}

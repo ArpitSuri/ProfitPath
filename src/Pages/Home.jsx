@@ -10,16 +10,25 @@ import StackingCards from '../components/HomePageComponents/StickyCardEffect'
 
 const Home = () => {
   return (
-      <main className="bg-black text-white overflow-x-hidden">
+    <main
+      className="relative min-h-screen text-white overflow-x-hidden bg-center bg-no-repeat bg-cover bg-fixed"
+      style={{ backgroundImage: "url('/bg.png')" }}
+    >
+      {/* Optional: Dark Overlay to ensure text readability across all sections */}
+      <div className="absolute inset-0pointer-events-none" />
+
+      {/* Content needs relative z-index to stay above the overlay */}
+      <div className="relative z-10">
         <Navbar />
         <Hero />
         <StackingCards />
         <CompanyTray />
         <ResultsStats />
-        <FeatureShowcase />
+        {/* <FeatureShowcase /> */}
         <CaseStudyScroll />
         <ContactSection />
         <Footer />
+      </div>
     </main>
   )
 }

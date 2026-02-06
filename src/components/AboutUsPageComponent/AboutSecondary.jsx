@@ -43,7 +43,7 @@ const AboutSecondary = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="relative w-full py-24 bg-[#0a0a0a] overflow-hidden">
+        <section ref={sectionRef} className="relative w-full py-24  overflow-hidden">
             <div className="max-w-360 mx-auto px-10 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-20">
 
                 {/* LEFT CONTENT: Image with subtle border accent */}

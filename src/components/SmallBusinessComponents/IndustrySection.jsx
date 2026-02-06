@@ -98,7 +98,7 @@ const IndustryItem = ({ industry }) => {
 
 const IndustriesSection = () => {
     return (
-        <section className="w-full min-h-screen bg-black text-white py-24 px-6 flex flex-col items-center">
+        <section className="w-full min-h-screen  text-white py-24 px-6 flex flex-col items-center">
             <div className="w-full max-w-7xl">
                 {/* Badge */}
                 <div className="mb-12">

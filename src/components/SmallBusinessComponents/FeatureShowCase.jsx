@@ -74,7 +74,7 @@ const MiddleShowcase = () => {
     return (
         <section
             ref={sectionRef}
-            className="relative w-full min-h-screen bg-black text-white py-24 px-6 overflow-hidden flex flex-col items-center"
+            className="relative w-full min-h-screen text-white py-24 px-6 overflow-hidden flex flex-col items-center"
         >
             {/* 1. Top Left Badge */}
             <div className="self-start mb-12 md:ml-6 lg:ml-12">
@@ -103,7 +103,7 @@ const MiddleShowcase = () => {
                     className="w-full lg:w-1/3 flex flex-col gap-5 order-2 lg:order-1 items-center lg:items-end text-center lg:text-right"
                 >
                     {leftItems.map((item, i) => (
-                        <div key={i} className="group max-w-xs border border-white/20 rounded-2xl">
+                        <div key={i} className="group max-w-xs ">
                             <h3 className="text-2xl font-bold mb-3 group-hover:text-zinc-400 transition-colors">
                                 {item.title}
                             </h3>
@@ -145,7 +145,7 @@ const MiddleShowcase = () => {
                     className="w-full lg:w-1/3 flex flex-col gap-12 order-3 lg:order-3 items-center lg:items-start text-center lg:text-left"
                 >
                     {rightItems.map((item, i) => (
-                        <div key={i} className="group max-w-xs border border-white/20 rounded-2xl">
+                        <div key={i} className="group max-w-xs ">
                             <h3 className="text-2xl font-bold mb-3 group-hover:text-zinc-400 transition-colors">
                                 {item.title}
                             </h3>

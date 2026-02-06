@@ -37,7 +37,7 @@ const ExpertCard = ({ title, icon, gridClass, infoText }) => {
 
 const GrowthExperts = () => {
     return (
-        <section className="w-full min-h-screen bg-black text-white py-24 px-6 flex flex-col items-center">
+        <section className="w-full min-h-screen  text-white py-24 px-6 flex flex-col items-center">
             <div className="w-full max-w-7xl">
 
                 {/* Header Section */}

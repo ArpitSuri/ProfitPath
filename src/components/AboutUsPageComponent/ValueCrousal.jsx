@@ -43,7 +43,7 @@ const ValuesCarousel = () => {
     };
 
     return (
-        <section className="relative w-full py-32 bg-[#0a0a0a] overflow-hidden">
+        <section className="relative w-full py-32  overflow-hidden">
             <div className="max-w-[1440px] mx-auto px-10 lg:px-24">
 
                 {/* 1. Badge */}

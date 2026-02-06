@@ -33,7 +33,7 @@ const CookiePolicy = () => {
     ];
 
     return (
-        <div className="bg-black text-white min-h-screen selection:bg-zinc-500">
+        <div className=" text-white min-h-screen selection:bg-zinc-500">
 
             {/* HERO SECTION */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden border-b border-white/5">

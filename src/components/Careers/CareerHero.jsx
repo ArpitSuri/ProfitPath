@@ -21,7 +21,7 @@ const CareerHero = () => {
     ];
 
     return (
-        <section className="w-full min-h-screen bg-black text-white py-24 px-6 md:px-12 flex flex-col items-center overflow-hidden">
+        <section className="w-full min-h-screen  text-white py-24 px-6 md:px-12 flex flex-col items-center overflow-hidden">
             <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
 
                 {/* LEFT SIDE: Typography */}

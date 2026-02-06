@@ -567,7 +567,7 @@ const CaseStudyCarousel = () => {
     };
 
     return (
-        <section className="w-full min-h-screen bg-black text-white py-24 px-6 md:px-12">
+        <section className="w-full min-h-screen  text-white py-24 px-6 md:px-12">
             <div className="max-w-7xl mx-auto">
 
                 {/* TOP ROW: Badge (Left) | Heading & Subheading (Right) */}

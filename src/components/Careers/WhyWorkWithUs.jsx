@@ -9,7 +9,7 @@ const WhyWorkWithUs = () => {
     ];
 
     return (
-        <section className="w-full min-h-screen bg-black text-white py-24 px-6 md:px-12 flex flex-col items-center">
+        <section className="w-full min-h-screen  text-white py-24 px-6 md:px-12 flex flex-col items-center">
             <div className="w-full max-w-7xl">
 
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">

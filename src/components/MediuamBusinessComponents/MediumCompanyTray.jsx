@@ -10,7 +10,7 @@ const CompanyTray = () => {
     const displayLogos = [...companies, ...companies];
 
     return (
-        <div className="bg-black py-5 overflow-hidden">
+        <div className=" py-5 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6  text-left">
                 <h2 className="text-white/40 text-sm font-bold tracking-[0.3em] uppercase mb-4">
                     trusted by

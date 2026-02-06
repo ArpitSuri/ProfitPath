@@ -608,7 +608,7 @@ const CaseStudyScroll = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="relative flex flex-col lg:flex-row bg-black min-h-screen">
+        <div ref={containerRef} className="relative flex flex-col lg:flex-row min-h-screen">
 
             {/* LEFT SIDE: Content */}
             <div className="w-full lg:w-1/2 px-10 md:px-24">
@@ -659,12 +659,12 @@ const CaseStudyScroll = () => {
                             </div>
                         </div>
 
-                        <button className="group flex items-center gap-6 text-white font-black  tracking-wider text-lgtransition-all hover:text-zinc-400">
+                        {/* <button className="group flex items-center gap-6 text-white font-black  tracking-wider text-lgtransition-all hover:text-zinc-400">
                             VIEW PROJECT DETAILS
                             <span className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-zinc-500 group-hover:border-zinc-500 transition-all duration-500  hover:text-black">
                                 <span className="group-hover:tranzinc-x-1 transition-transform text-xl cursor-pointer">→</span>
                             </span>
-                        </button>
+                        </button> */}
                     </div>
                 ))}
             </div>

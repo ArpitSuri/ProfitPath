@@ -40,7 +40,7 @@ const JobOpenings = () => {
     ];
 
     return (
-        <section className="w-full bg-black text-white py-24 px-6 md:px-12 relative">
+        <section className="w-full  text-white py-24 px-6 md:px-12 relative">
             <div className="max-w-7xl mx-auto">
 
                 {/* 1. HEADING IN MIDDLE AT TOP */}
