@@ -12,7 +12,7 @@ const LeakageCalculator = () => {
 
     return (
         <div className="w-full bg-[#111113] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
-            <div className="p-8 md:p-10 space-y-8">
+            <div className="p-8 md:p-10 space-y-4">
 
                 {/* 01. Deal Value */}
                 <div className="space-y-3">
@@ -21,7 +21,7 @@ const LeakageCalculator = () => {
                     </label>
                     <div className="relative group">
                         <div className="absolute left-0 top-0 bottom-0 px-4 flex items-center bg-zinc-800/50 border-r border-zinc-700 rounded-l-2xl text-zinc-400 font-bold group-focus-within:text-zinc-400 transition-colors">
-                            £ <span className="ml-1 text-[10px]">▼</span>
+                            $ <span className="ml-1 text-[10px]">▼</span>
                         </div>
                         <input
                             type="number"
@@ -131,8 +131,8 @@ const LeakageCalculator = () => {
 
             {/* Footer Action */}
             <div className="bg-zinc-900/50 p-6 border-t border-white/5">
-                <button className="w-full bg-white text-black py-5 rounded-2xl font-black text-[11px]   tracking-wider hover:bg- zinc-500 hover:text-white hover:bg-black transition-all duration-500 shadow-xl shadow-black/20">
-                    Find the leaks →
+                <button className="w-full bg-white text-black py-5 rounded-2xl font-black text-[16px]   tracking-wider hover:bg- zinc-500 hover:text-white hover:bg-black transition-all duration-500 shadow-xl shadow-black/20">
+                    Find the leaks 
                 </button>
             </div>
         </div>

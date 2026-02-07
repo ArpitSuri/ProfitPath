@@ -40,7 +40,7 @@ export default function Hero() {
                                 <Check className="h-3 w-3 text-black stroke-3" />
                             </div>
                             <span className="font-questrial">
-                                £41m attributed revenue <span className="mx-2 opacity-30">•</span> 31k meetings
+                                $41m attributed revenue <span className="mx-2 opacity-30">•</span> 31k meetings
                             </span>
                         </span>
 
