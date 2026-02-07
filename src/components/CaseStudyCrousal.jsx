@@ -658,10 +658,10 @@ const CaseStudyCarousel = () => {
                 </div>
 
                 {/* Mobile Arrows (Visible only on small screens) */}
-                <div className="flex lg:hidden gap-4 mt-8 justify-center">
+                {/* <div className="flex lg:hidden gap-4 mt-8 justify-center">
                     <button onClick={() => scroll('left')} className="p-4 rounded-full border border-white/10"><ChevronLeft /></button>
                     <button onClick={() => scroll('right')} className="p-4 rounded-full border border-white/10"><ChevronRight /></button>
-                </div>
+                </div> */}
             </div>
 
             {/* Tailwind CSS for hiding scrollbars */}

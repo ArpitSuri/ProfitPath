@@ -45,7 +45,7 @@ const TermsAndConditions = () => {
                 {/* LEFT: STICKY NAVIGATION */}
                 <aside className="lg:w-1/4">
                     <div className="sticky top-32 space-y-4">
-                        <p className="text-[10px] tracking-wider text-slate-500 font-bold mb-6 uppercase">Table of Contents</p>
+                        <p className="text-[10px] tracking-wider text-zinc-500 font-bold mb-6 uppercase">Table of Contents</p>
                         {sections.map((sec) => (
                             <button
                                 key={sec.id}
@@ -55,7 +55,7 @@ const TermsAndConditions = () => {
                                 <span className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-zinc-500/20 group-hover:border-zinc-500 transition-all">
                                     {sec.icon}
                                 </span>
-                                <span className="text-sm font-bold tracking-wider text-slate-400 group-hover:text-white transition-colors">
+                                <span className="text-sm font-bold tracking-wider text-zinc-400 group-hover:text-white transition-colors">
                                     {sec.title}
                                 </span>
                             </button>
@@ -70,7 +70,7 @@ const TermsAndConditions = () => {
                         <h2 className="text-3xl font-black tracking-wider mb-8 flex items-center gap-4 text-zinc-300">
                             <span className="text-zinc-500">01.</span> Services Provided
                         </h2>
-                        <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-light">
+                        <div className="space-y-6 text-zinc-400 leading-relaxed text-lg font-light">
                             <p>
                                 Welcome to <span className="text-white font-medium">ProfitPath</span>. By accessing our website, you agree to comply with these terms. ProfitPath is a lead generation agency; our website provides information about our agency and offers services such as booking strategy calls.
                             </p>
@@ -84,7 +84,7 @@ const TermsAndConditions = () => {
                         <h2 className="text-3xl font-black tracking-wider mb-8 flex items-center gap-4 text-zinc-300">
                             <span className="text-zinc-500">02.</span> Booking Calls & Anti-Spam
                         </h2>
-                        <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-light">
+                        <div className="space-y-6 text-zinc-400 leading-relaxed text-lg font-light">
                             <p>
                                 You agree to provide accurate and truthful information when booking a call. <span className="text-white">Spam bookings</span>—including false information or booking without genuine interest—are strictly prohibited.
                             </p>
@@ -100,7 +100,7 @@ const TermsAndConditions = () => {
                         <h2 className="text-3xl font-black tracking-wider mb-8 flex items-center gap-4 text-zinc-300">
                             <span className="text-zinc-500">03.</span> Intellectual Property
                         </h2>
-                        <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-light">
+                        <div className="space-y-6 text-zinc-400 leading-relaxed text-lg font-light">
                             <p>
                                 All content on the ProfitPath website—including text, graphics, logos, and images—is the property of ProfitPath or its content suppliers.
                             </p>
@@ -114,7 +114,7 @@ const TermsAndConditions = () => {
                         <h2 className="text-3xl font-black tracking-wider mb-8 flex items-center gap-4 text-zinc-300">
                             <span className="text-zinc-500">04.</span> Limitation of Liability
                         </h2>
-                        <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-light">
+                        <div className="space-y-6 text-zinc-400 leading-relaxed text-lg font-light">
                             <p>
                                 ProfitPath is not liable for any direct, indirect, incidental, or consequential damages arising from your use of our website. We do not warrant that our website will be uninterrupted, error-free, or free of harmful components.
                             </p>
@@ -125,7 +125,7 @@ const TermsAndConditions = () => {
                         <h2 className="text-3xl font-black tracking-wider mb-8 flex items-center gap-4 text-zinc-300">
                             <span className="text-zinc-500">05.</span> Governing Law
                         </h2>
-                        <div className="space-y-6 text-slate-400 leading-relaxed text-lg font-light">
+                        <div className="space-y-6 text-zinc-400 leading-relaxed text-lg font-light">
                             <p>
                                 These Terms of Service are governed by and construed in accordance with the laws of <span className="text-white">The United Kingdom</span>. Any disputes shall be resolved exclusively in the courts of The United Kingdom.
                             </p>
@@ -136,13 +136,13 @@ const TermsAndConditions = () => {
                     <div className="pt-20 border-t border-white/10">
                         <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-[0.2em]">Contact Us</h4>
                         <div className="flex flex-col gap-4">
-                            <a href="mailto:janneciofficial@gmail.com" className="group flex items-center gap-4 text-slate-400 hover:text-white transition-all">
+                            <a href="mailto:janneciofficial@gmail.com" className="group flex items-center gap-4 text-zinc-400 hover:text-white transition-all">
                                 <div className="p-3 rounded-full bg-white/5 group-hover:bg-white group-hover:text-black transition-all">
                                     <Mail size={16} />
                                 </div>
                                 janneciofficial@gmail.com
                             </a>
-                            <a href="mailto:jesus@profitpathgrowthpartners.com" className="group flex items-center gap-4 text-slate-400 hover:text-white transition-all">
+                            <a href="mailto:jesus@profitpathgrowthpartners.com" className="group flex items-center gap-4 text-zinc-400 hover:text-white transition-all">
                                 <div className="p-3 rounded-full bg-white/5 group-hover:bg-white group-hover:text-black transition-all">
                                     <Mail size={16} />
                                 </div>

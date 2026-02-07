@@ -53,7 +53,7 @@ const TeamMoments = () => {
                     </div>
 
                     {/* Navigation Controls */}
-                    <div className="flex justify-center gap-4 mt-8">
+                    <div className="hidden md:flex justify-center gap-4 mt-8">
                         <button
                             onClick={() => scroll('left')}
                             className="p-5 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all duration-300 active:scale-90"

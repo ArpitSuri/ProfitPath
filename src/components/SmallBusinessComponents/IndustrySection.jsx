@@ -81,14 +81,24 @@ const IndustryItem = ({ industry }) => {
                         {industry.description}
                     </p>
 
-                    <div className="flex items-center gap-6 p-6">
+                    <div className="flex-col items-center gap-6 p-6">
                         <div className="flex gap-4">
                             {industry.expandedIcons.map((src, idx) => (
                                 <img
                                     key={idx}
                                     src={src}
                                     alt="capability icon"
-                                    className="w-24 h-24 object-contain hover:scale-110 transition-transform cursor-default"
+                                    className="w-14 h-14 lg:w-24 lg:h-24 object-contain hover:scale-110 transition-transform cursor-default"
+                                />
+                            ))}
+                        </div>
+                        <div className="flex md:hidden gap-4">
+                            {industry.initialIcons.map((src, idx) => (
+                                <img
+                                    key={idx}
+                                    src={src}
+                                    alt="capability icon"
+                                    className="w-14 h-14 lg:w-24 lg:h-24 object-contain hover:scale-110 transition-transform cursor-default"
                                 />
                             ))}
                         </div>

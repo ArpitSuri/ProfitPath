@@ -165,7 +165,7 @@ const Footer = () => {
                         <p onClick={() => { navigate('/privacy-policy'); window.scrollTo(0, 0); }} className="hover:text-white transition-colors cursor-pointer">Privacy Policy</p>
                     </div>
                     <div className="text-zinc-600">
-                        ProfitPath @ 2026. All Rights Reserved.
+                        ProfitPath @ 2023. All Rights Reserved.
                     </div>
                 </div>
 
