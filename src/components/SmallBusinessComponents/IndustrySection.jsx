@@ -1,27 +1,28 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { ChevronDown } from 'lucide-react'; // Using lucide for the down button
+import { ChevronDown } from 'lucide-react';
 
 const industries = [
     {
         id: 1,
         name: "E-commerce & Retail",
-        initialIcons: ["🛍️", "💳", "📦", "📈"],
-        expandedIcons: ["🏷️", "🚚", "📱", "🎯"],
+        // Replace these paths with your actual repo image paths
+        initialIcons: ["/companies/1.png", "/companies/2.png", "/companies/3.png", "/companies/4.png"],
+        expandedIcons: ["/companies/5.png", "/companies/6.png", "/companies/7.png", "/companies/8.png"],
         description: "Scale your online storefront with high-performance funnels, integrated payment systems, and data-driven customer retention strategies designed for the modern shopper."
     },
     {
         id: 2,
         name: "Fintech & Banking",
-        initialIcons: ["🏦", "🛡️", "📊", "₿"],
-        expandedIcons: ["📲", "⚖️", "💎", "🔐"],
+        initialIcons: ["/companies/1.png", "/companies/2.png", "/companies/3.png", "/companies/4.png"],
+        expandedIcons: ["/companies/5.png", "/companies/6.png", "/companies/7.png", "/companies/8.png"],
         description: "Secure, compliant, and user-centric financial platforms. We build trust through precision engineering and world-class security protocols for digital assets."
     },
     {
         id: 3,
         name: "SaaS & Tech",
-        initialIcons: ["☁️", "💻", "🚀", "🛠️"],
-        expandedIcons: ["🔌", "🧬", "📡", "🏗️"],
+        initialIcons: ["/companies/1.png", "/companies/2.png", "/companies/3.png", "/companies/4.png"],
+        expandedIcons: ["/companies/5.png", "/companies/6.png", "/companies/7.png", "/companies/8.png"],
         description: "Accelerate your software-as-a-service growth. From complex API integrations to intuitive dashboard designs that reduce churn and increase LTV."
     }
 ];
@@ -55,20 +56,20 @@ const IndustryItem = ({ industry }) => {
                     >
                         <ChevronDown size={20} />
                     </div>
-                    <h3 className="text-2xl md:text-4xl font-bold  tracking-wider text-zinc-400 group-hover:text-white transition-colors duration-300">
+                    <h3 className="text-2xl md:text-4xl font-bold tracking-wider text-zinc-400 group-hover:text-white transition-colors duration-300">
                         {industry.name}
                     </h3>
                 </div>
 
-                {/* RIGHT: Initial Icons */}
+                {/* RIGHT: Initial Icons (Images) */}
                 <div className="hidden md:flex items-center gap-4">
-                    {industry.initialIcons.map((icon, idx) => (
-                        <span
+                    {industry.initialIcons.map((src, idx) => (
+                        <img
                             key={idx}
-                            className="text-2xl filter grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500"
-                        >
-                            {icon}
-                        </span>
+                            src={src}
+                            alt="industry icon"
+                            className="w-24 h-24 object-contain filter grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500"
+                        />
                     ))}
                 </div>
             </div>
@@ -80,13 +81,15 @@ const IndustryItem = ({ industry }) => {
                         {industry.description}
                     </p>
 
-                    <div className="flex items-center gap-6 p-6 bg-white/5 rounded-2xl border border-white/5">
-                        <span className="text-xs font-black  tracking-wider text-zinc-600">Additional Capabilities</span>
+                    <div className="flex items-center gap-6 p-6">
                         <div className="flex gap-4">
-                            {industry.expandedIcons.map((icon, idx) => (
-                                <span key={idx} className="text-3xl hover:scale-110 transition-transform cursor-default">
-                                    {icon}
-                                </span>
+                            {industry.expandedIcons.map((src, idx) => (
+                                <img
+                                    key={idx}
+                                    src={src}
+                                    alt="capability icon"
+                                    className="w-24 h-24 object-contain hover:scale-110 transition-transform cursor-default"
+                                />
                             ))}
                         </div>
                     </div>
@@ -98,11 +101,11 @@ const IndustryItem = ({ industry }) => {
 
 const IndustriesSection = () => {
     return (
-        <section className="w-full min-h-screen  text-white py-24 px-6 flex flex-col items-center">
+        <section className="w-full min-h-screen text-white py-24 px-6 flex flex-col items-center">
             <div className="w-full max-w-7xl">
                 {/* Badge */}
                 <div className="mb-12">
-                    <span className="px-4 py-1.5 rounded-full  text-white/70 text-[12px] font-black ">
+                    <span className="px-4 py-1.5 rounded-full text-white/70 text-[12px] font-black ">
                         Industries We Scale
                     </span>
                 </div>
@@ -110,7 +113,7 @@ const IndustriesSection = () => {
                 {/* List Header */}
                 <div className="mb-8 flex justify-between items-end border-b border-white/10 pb-4">
                     <h2 className="text-white text-3xl font-bold tracking-wider">Industry Segment</h2>
-                    <h2 className="hidden md:block text-zinc-600 text-lg font-bold  tracking-wider">Key Drivers</h2>
+                    <h2 className="hidden md:block text-zinc-600 text-lg font-bold tracking-wider">Key Drivers</h2>
                 </div>
 
                 {/* Industry List */}

@@ -3,28 +3,22 @@ import React from 'react';
 const ResultsStats = () => {
     const stats = [
         {
-            value: "£41m+",
-            label: "Attributed Revenue",
+            value: "$100M+",
+            label: " Revenue Generated",
             color: "border-cyan-400",
             glow: "shadow-[0_0_20px_rgba(34,211,238,0.4)]",
         },
         {
-            value: "8x",
-            label: "Average ROI",
+            value: "10000+",
+            label: "Meetings Scheduled",
             color: "border-indigo-500",
             glow: "shadow-[0_0_20px_rgba(99,102,241,0.4)]",
         },
         {
-            value: "31,251+",
-            label: "Meetings Booked",
+            value: "86%",
+            label: "Client Retention Rate",
             color: "border-purple-500",
             glow: "shadow-[0_0_20px_rgba(168,85,247,0.4)]",
-        },
-        {
-            value: "400+",
-            label: "Clients Served",
-            color: "border-fuchsia-500",
-            glow: "shadow-[0_0_20px_rgba(217,70,239,0.4)]",
         },
     ];
 

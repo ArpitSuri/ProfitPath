@@ -56,8 +56,8 @@ const ValuesCarousel = () => {
                 <div ref={cardRef} className="relative w-full bg-zinc-900/30 border border-zinc-800 rounded-[3rem] overflow-hidden min-h-[500px] flex flex-col lg:flex-row items-stretch transition-all duration-500 hover:border-zinc-700">
 
                     {/* Left Side: Content */}
-                    <div className="w-full lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
-                        <h2 className="text-white text-5xl lg:text-7xl font-black tracking-wider   mb-8 leading-none">
+                    <div className="w-full lg:w-1/2 p-4 py-8 lg:p-20 flex flex-col justify-center">
+                        <h2 className="text-white text-4xl lg:text-7xl font-black tracking-wider  mb-8 leading-none">
                             {values[currentIndex].title}
                         </h2>
                         <div className="space-y-4 max-w-md">

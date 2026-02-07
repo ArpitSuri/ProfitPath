@@ -646,13 +646,10 @@ const CaseStudyCarousel = () => {
                                             <h4 className="text-xl font-bold  tracking-wider group-hover:text-zinc-400 transition-colors">
                                                 {study.company}
                                             </h4>
-                                            <p className="text-zinc-600 text-sm font-light mt-1 truncate max-w-[250px]">
-                                                {study.description}
-                                            </p>
+                                            <h5 className="text-zinc-500 text-xs font-light mt-1">{study.challenge}</h5>
+                                        
                                         </div>
-                                        <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300">
-                                            <ArrowRight size={20} />
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             ))}

@@ -80,7 +80,7 @@ const JobOpenings = () => {
 
             {/* 3. MODAL COMPONENT */}
             {selectedJob && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 backdrop-blur-xl bg-black/80 animate-fadeIn">
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 backdrop-blur-xl bg-black/80 animate-fadeIn mt-25">
                     <div className="bg-zinc-900 border border-white/10 w-full max-w-2xl rounded-[2.5rem] overflow-hidden relative shadow-2xl">
 
                         {/* Modal Header */}

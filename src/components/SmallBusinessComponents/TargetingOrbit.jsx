@@ -10,7 +10,7 @@ const items = [
 
 const TargetingOrbit = () => {
     return (
-        <section className="w-full min-h-[600px] flex items-center justify-center py-20 px-10 overflow-hidden">
+        <section className="w-full min-h-[600px] items-center justify-center py-20 px-10 overflow-hidden hidden lg:flex">
             <div className="max-w-[1200px] w-full flex flex-col lg:flex-row items-center justify-between gap-20">
 
                 {/* Left Side Text */}
@@ -33,7 +33,7 @@ const TargetingOrbit = () => {
                             style={{ WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)', WebkitMaskComposite: 'destination-out' }} />
 
                         {/* Center Box */}
-                        <div className="relative z-10 w-32 h-32 bg-zinc-900 rounded-2xl border border-white/10 flex items-center justify-center shadow-2xl overflow-hidden">
+                        <div className="relative z-10 w-20 h-32 bg-zinc-900 rounded-2xl border border-white/10 flex items-center justify-center shadow-2xl overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-transparent" />
                             <div className="text-4xl">⚙️</div>
                         </div>

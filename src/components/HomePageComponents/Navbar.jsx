@@ -87,7 +87,7 @@ const Navbar = () => {
             />
 
             {/* --- 1. HERO NAVBAR (Transparent/Initial) --- */}
-            <nav className={`fixed top-0 w-full z-[100]  bg-black py-8 px-10 flex items-center justify-between transition-all duration-500 ease-in-out ${isScrolled ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
+            <nav className={`fixed top-0 w-full z-[100]  bg-black py-2 px-10 flex items-center justify-between transition-all duration-500 ease-in-out ${isScrolled ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
                 <div onClick={() => navigate('/')} className="cursor-pointer">
                     <img src={logo} alt="ProfitPath Logo" className="h-10 w-auto object-contain" />
                 </div>
@@ -107,14 +107,14 @@ const Navbar = () => {
                 </div>
 
                 <button onClick={() => setIsMenuOpen(true)} className="lg:hidden text-white flex items-center gap-2 font-bold text-[10px] tracking-wider ">
-                    Menu <Menu size={20} />
+                    <Menu size={20} />
                 </button>
             </nav>
 
             {/* --- 2. ACTION NAVBAR (Sticky/Scrolled) --- */}
-            <nav className={`fixed top-0 w-full z-[110] bg-black backdrop-blur-2xl border-b border-white/10 py-4 px-10 flex items-center justify-around transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] shadow-2xl ${isScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+            <nav className={`fixed top-0 w-full z-[110] bg-black backdrop-blur-2xl border-b border-white/10 py-4 px-4 flex items-center justify-around transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] shadow-2xl ${isScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
                 <div onClick={() => navigate('/')} className="cursor-pointer">
-                    <img src={logo} alt="ProfitPath Logo" className="h-12 w-auto object-contain" />
+                    <img src={logo} alt="ProfitPath Logo" className="h-10 w-auto object-contain" />
                 </div>
 
                 <div className="hidden lg:flex items-center gap-8">
@@ -140,12 +140,12 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="lg:hidden flex items-center gap-4">
-                    <button onClick={() => navigate('/roi-calculator')} className="text-white">
+                <div className="lg:hidden flex items-center gap-1">
+                    <button onClick={() => navigate('/roi-calculator')} className="text-white h-10 w-10">
                         <AnimatedCalcButton />
                     </button>
                     <button onClick={() => setIsMenuOpen(true)} className="text-white font-bold text-[10px] tracking-wider ">
-                        MENU
+                        <Menu size={20} />
                     </button>
                 </div>
             </nav>
@@ -159,7 +159,7 @@ const Navbar = () => {
                     <div onClick={() => { navigate('/'); setIsMenuOpen(false); }} className="cursor-pointer">
                         <img src={logo} alt="ProfitPath Logo" className="h-10 w-auto object-contain" />
                     </div>
-                    <button onClick={() => setIsMenuOpen(false)} className="w-12 h-12 bg-white rounded-full flex items-center justify-center relative">
+                    <button onClick={() => setIsMenuOpen(false)} className="w-10 h-10 bg-white rounded-full flex items-center justify-center relative">
                         <span className="absolute w-5 h-0.5 bg-black rotate-45"></span>
                         <span className="absolute w-5 h-0.5 bg-black -rotate-45"></span>
                     </button>

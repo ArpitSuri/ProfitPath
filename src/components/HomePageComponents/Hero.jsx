@@ -35,7 +35,7 @@ export default function Hero() {
                     {/* LEFT CONTENT */}
                     <div className="flex flex-col gap-6 w-full md:w-1/2 items-center text-center md:items-start md:text-left">
                         {/* 1. Stat Badge: Glassmorphism look */}
-                        <span className="rounded-full border border-white/10 px-5 py-2 text-[10px] md:text-xs text-white/80 tracking-[0.2em] uppercase flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm shadow-xl">
+                        <span className="rounded-full border border-white/10 px-5 py-2 text-[8px] md:text-xs text-white/80 tracking-[0.2em] uppercase flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm shadow-xl">
                             <div className="flex items-center justify-center h-5 w-5 rounded-full bg-emerald-400">
                                 <Check className="h-3 w-3 text-black stroke-3" />
                             </div>
@@ -45,10 +45,10 @@ export default function Hero() {
                         </span>
 
                         {/* 2. Main Heading: High-end Typography */}
-                        <h1 className="text-5xl sm:text-6xl lg:text-6xl font-extrabold leading-[1.05] font-questrial tracking-tight text-white">
-                            Connecting You <br/> With <br />
+                        <h1 className="text-4xl sm:text-6xl lg:text-5xl font-extrabold leading-[1.05] font-questrial tracking-tight text-white">
+                            Accelerating Your Pipeline<br/> To <br />
                             <span className="inline-block mt-4 border border-white/40 py-2 px-6 rounded-3xl font-light bg-white/10 backdrop-blur-md text-white">
-                                Your Dream Clients
+                                Premium Partnerships.
                             </span>
                         </h1>
 
@@ -68,45 +68,6 @@ export default function Hero() {
                             {/* <InstantQuoteButton /> */}
                         </div>
                     </div>
-
-                    {/* RIGHT VIDEO PREVIEW */}
-                    {/* <div
-                        className="w-full md:w-1/2 relative group cursor-pointer aspect-video md:aspect-auto"
-                        onMouseEnter={() => videoRef.current?.play()}
-                        onMouseLeave={() => videoRef.current?.pause()}
-                        onClick={() => setOpen(true)}
-                    >
-                        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl">
-                            <video
-                                ref={videoRef}
-                                src="/preview.mp4"
-                                muted
-                                loop
-                                playsInline
-                                preload="auto"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-
-                           
-                            <div className="absolute inset-0 bg-black/40 opacity-100 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center pointer-events-none">
-                                <div className="transform tranzinc-y-4 group-hover:tranzinc-y-0 transition-all duration-500 ease-out">
-                                    <div className="flex items-center gap-4 bg-white/10 backdrop-blur-xl border border-white/20 px-6 py-3 rounded-full">
-                                        <span className="font-questrial text-white font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs">
-                                            Play Success Story
-                                        </span>
-                                        <div className="w-8 h-8 md:w-10 md:h-10 bg-white text-black rounded-full flex items-center justify-center pl-1 shadow-lg">
-                                            <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 md:w-5 md:h-5">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                        <div className="absolute -inset-4 bg-white/5 blur-3xl rounded-full -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    </div> */}
                    
                     {/* RIGHT SIDE: PLATFORM RATINGS */}
                     <div className="w-full md:w-1/2 flex flex-col sm:flex-row items-center justify-center gap-8 relative">

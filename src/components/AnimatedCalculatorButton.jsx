@@ -24,7 +24,7 @@ const AnimatedCalcButton = () => {
     return (
         <button
             onClick={() => { navigate('/roi-calculator'); }}
-            className="w-12 h-12 rounded-full border border-gray-900 flex items-center justify-center text-xl bg-gray-200 shadow-sm overflow-hidden"
+            className="w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-lg bg-gray-200 shadow-sm overflow-hidden"
         >
             <AnimatePresence mode="wait">
                 <motion.span

@@ -61,7 +61,7 @@ const SmallBusinessHero = () => {
                         <button className="group relative px-8 py-4 bg-white text-black font-black text-sm zinc tracking-wider rounded-xl overflow-hidden transition-all hover:bg-black hover:text-white">
                             <span className="relative z-10 flex items-center gap-3 cursor-pointer">
                                 Start Your Growth Journey
-                                <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+                               
                             </span>
                         </button>
                     </div>

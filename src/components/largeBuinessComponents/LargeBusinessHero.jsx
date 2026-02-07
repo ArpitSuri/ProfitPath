@@ -46,7 +46,7 @@ const LargeBusinessHero = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                         </span>
-                        Tailored for Small Business
+                        Tailored for Large Business
                     </div>
 
                     {/* Heading */}
@@ -66,7 +66,6 @@ const LargeBusinessHero = () => {
                         <button className="group relative px-8 py-4 bg-white text-black font-black text-xs uppercase tracking-widest rounded-xl overflow-hidden transition-all hover:bg-indigo-600 hover:text-white">
                             <span className="relative z-10 flex items-center gap-3">
                                 Start Your Growth Journey
-                                <span className="text-xl group-hover:tranzinc-x-1 transition-transform">→</span>
                             </span>
                         </button>
                     </div>

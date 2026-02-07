@@ -13,6 +13,7 @@ import LargeBusinessPage from './Pages/LargeBusinessPage'
 import TermsAndConditionPage from './Pages/TermsAndConditionPage'
 import PrivacyPolicyPage from './Pages/PrivacyPolicyPage'
 import CookiePolicyPage from './Pages/CookiePolicyPage'
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
+        <ScrollToTop />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path="/roi-calculator" element={<ROIPage />} />

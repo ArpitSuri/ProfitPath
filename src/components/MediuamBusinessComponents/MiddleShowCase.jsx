@@ -117,7 +117,7 @@ const MiddleShowcase = () => {
                 {/* Center Graphic (Width 1/3) */}
                 <div
                     ref={centerRef}
-                    className="w-full lg:w-1/3 flex justify-center order-1 lg:order-2"
+                    className="w-full lg:w-1/3  justify-center order-1 lg:order-2 hidden lg:flex"
                 >
                     <div className="relative group">
                         {/* Animated Glow behind the circle */}

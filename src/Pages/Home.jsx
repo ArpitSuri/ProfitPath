@@ -21,8 +21,8 @@ const Home = () => {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <StackingCards />
         <CompanyTray />
+        <StackingCards />
         <ResultsStats />
         {/* <FeatureShowcase /> */}
         <CaseStudyScroll />
