@@ -10,6 +10,7 @@ import IndustriesSection from '../components/SmallBusinessComponents/IndustrySec
 import CaseStudyCarousel from '../components/CaseStudyCrousal'
 import ContactSection from '../components/HomePageComponents/ContactSection'
 import ROIComponent from '../components/ROIPage'
+import LargeBusinessHero from '../components/largeBuinessComponents/LargeBusinessHero'
 const LargeBusinessPage = () => {
   return (
     <main
@@ -17,7 +18,7 @@ const LargeBusinessPage = () => {
       style={{ backgroundImage: "url('/bg.png')" }}
     >
         <Navbar />
-        <SmallBusinessHero />
+        <LargeBusinessHero />
         <MiddleShowcase />
         <WhoAreWe />
         <GrowthExperts />

@@ -31,9 +31,9 @@ const LargeBusinessHero = () => {
     }, []);
 
     return (
-        <section ref={containerRef} className="relative w-full min-h-[85vh] flex items-center bg-[#0a0a0a] overflow-hidden pt-20">
+        <section ref={containerRef} className="relative w-full min-h-[85vh] flex items-center  overflow-hidden pt-20">
             {/* Background Glow */}
-            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-zinc-500/10 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="relative w-full max-w-[1440px] mx-auto px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-16 z-10">
 
@@ -41,31 +41,27 @@ const LargeBusinessHero = () => {
                 <div ref={contentRef} className="w-full lg:w-[55%] flex flex-col items-start text-left">
 
                     {/* Badge */}
-                    <div className="animate-text mb-6 px-4 py-1.5 rounded-full border border-indigo-500/20 bg-indigo-500/5 text-indigo-400 text-[10px] font-black uppercase tracking-[0.3em] flex items-center gap-2">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                        </span>
-                        Tailored for Large Business
+                    <div className="animate-text mb-6 px-4 py-1.5 rounded-full text-zinc-400 text-[12px] font-black zinc tracking-wider flex items-center gap-2">
+                        For Large Business
                     </div>
 
                     {/* Heading */}
-                    <h1 className="animate-text text-white text-5xl lg:text-7xl font-black tracking-tighter leading-[0.9] uppercase mb-8">
-                        Big Agency <br />
-                        <span className="text-zinc-800 outline-text">Results for</span> <br />
-                        <span className="text-indigo-500 italic">Local Heroes.</span>
+                    <h1 className="animate-text text-white text-5xl lg:text-6xl font-black tracking-wider leading-[0.9] zinc mb-8">
+                        Prospecting. Done <br />
+                        <span className="text-zinc-800 outline-text">for you, by experts.</span> <br />
                     </h1>
 
                     {/* Subheading */}
                     <p className="animate-text text-zinc-400 text-lg md:text-xl font-light leading-relaxed max-w-lg mb-10 border-l border-zinc-800 pl-6">
-                        Stop guessing and start growing. We provide small businesses with the high-performance prospecting systems usually reserved for the top 1%.
+                        Stop guessing and start growing. We provide large businesses with the high-performance prospecting systems usually reserved for the top 1%.
                     </p>
 
                     {/* CTA Button */}
                     <div className="animate-text">
-                        <button className="group relative px-8 py-4 bg-white text-black font-black text-xs uppercase tracking-widest rounded-xl overflow-hidden transition-all hover:bg-indigo-600 hover:text-white">
-                            <span className="relative z-10 flex items-center gap-3">
+                        <button className="group relative px-8 py-4 bg-white text-black font-black text-sm zinc tracking-wider rounded-xl overflow-hidden transition-all hover:bg-black hover:text-white">
+                            <span className="relative z-10 flex items-center gap-3 cursor-pointer">
                                 Start Your Growth Journey
+
                             </span>
                         </button>
                     </div>
@@ -75,12 +71,12 @@ const LargeBusinessHero = () => {
                 <div className="w-full lg:w-[45%] flex justify-center lg:justify-end">
                     <div className="relative w-full max-w-md aspect-[4/5] overflow-hidden rounded-[2.5rem] border border-zinc-800 bg-zinc-900 shadow-2xl">
                         {/* Decorative Corner Element */}
-                        <div className="absolute top-6 right-6 z-20 w-12 h-12 border-t-2 border-r-2 border-indigo-500 rounded-tr-xl opacity-50" />
+                        <div className="absolute top-6 right-6 z-20 w-12 h-12 border-t-2 border-r-2 border-zinc-500 rounded-tr-xl opacity-50" />
 
                         <img
                             ref={imageRef}
                             src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop"
-                            alt="Small business growth"
+                            alt="Large business growth"
                             className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
                         />
 
@@ -88,12 +84,12 @@ const LargeBusinessHero = () => {
                         <div className="absolute bottom-8 left-1/2 -tranzinc-x-1/2 w-[80%] bg-zinc-950/80 backdrop-blur-md border border-white/10 p-4 rounded-2xl z-20">
                             <div className="flex justify-between items-center">
                                 <div>
-                                    <p className="text-zinc-500 text-[8px] font-black uppercase tracking-widest">Avg. Growth</p>
+                                    <p className="text-zinc-500 text-[8px] font-black zinc tracking-wider">Avg. Growth</p>
                                     <p className="text-white text-lg font-bold">+42%</p>
                                 </div>
                                 <div className="h-8 w-[1px] bg-zinc-800" />
                                 <div>
-                                    <p className="text-zinc-500 text-[8px] font-black uppercase tracking-widest">Setup Time</p>
+                                    <p className="text-zinc-500 text-[8px] font-black zinc tracking-wider">Setup Time</p>
                                     <p className="text-white text-lg font-bold">14 Days</p>
                                 </div>
                             </div>
