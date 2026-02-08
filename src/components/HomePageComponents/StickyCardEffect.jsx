@@ -8,60 +8,60 @@ import { ArrowRight } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const cards = [
-    {
-        id: 1,
-        bgColor: "#000",
-        renderContent: () => (
-            <div className="w-full max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                {/* LEFT SIDE: Heading & Subheading */}
-                <div className="flex flex-col space-y-6 text-center lg:text-left items-center lg:items-start">
-                    <h2 className="text-5xl md:text-7xl lg:text-6xl font-black text-white leading-none tracking-wider">
-                        We open more <br className="hidden lg:block" /> doors.
-                    </h2>
-                    <p className="text-lg md:text-xl lg:text-2xl text-zinc-400 max-w-md leading-relaxed">
-                        Building the future of digital experiences through precision,
-                        innovation, and world-class engineering.
-                    </p>
-                </div>
+    // {
+    //     id: 1,
+    //     bgColor: "#000",
+    //     renderContent: () => (
+    //         <div className="w-full max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    //             {/* LEFT SIDE: Heading & Subheading */}
+    //             <div className="flex flex-col space-y-6 text-center lg:text-left items-center lg:items-start">
+    //                 <h2 className="text-5xl md:text-7xl lg:text-6xl font-black text-white leading-none tracking-wider">
+    //                     We open more <br className="hidden lg:block" /> doors.
+    //                 </h2>
+    //                 <p className="text-lg md:text-xl lg:text-2xl text-zinc-400 max-w-md leading-relaxed">
+    //                     Building the future of digital experiences through precision,
+    //                     innovation, and world-class engineering.
+    //                 </p>
+    //             </div>
 
-                {/* RIGHT SIDE: Grid of Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                    {[
-                        {
-                            icon: "🎨", title: "No more missed opportunities.", desc: "Without a steady stream of leads, it’s impossible to gain momentum. Profit Path keeps your funnel flowing." },
-                        { icon: "⚡", title: "Your team just got two-thirds bigger.", desc: "Our outreach specialists become an extension of your team. You focus on closing." },
-                        { icon: "🛡️", title: "Save time. Close faster.", desc: "Profit Path doesn’t just toss leads over the fence—we nurture them until the sales meeting." },
-                        { icon: "📱", title: "Right people, right time.", desc: "Profit Path’s database of half a billion data points holds the leads you need to grow." },
-                    ].map((item, i) => (
-                        <div
-                            key={i}
-                            className="flex flex-col items-center lg:items-start p-6 md:p-8 
-             bg-linear-to-br from-white/10 to-white/[0.02] 
-             backdrop-blur-xl border border-white/20 
-             rounded-3xl hover:border-white/40 hover:bg-white/10 
-             transition-all duration-500 group shadow-2xl 
-             text-center lg:text-left"
-                        >
-                            {/* Icon Container with Glass Effect */}
-                            <div className="text-2xl mb-6 flex items-center justify-center 
-                  w-14 h-14 rounded-2xl bg-white/10 border border-white/10 
-                  group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
-                                {item.icon}
-                            </div>
+    //             {/* RIGHT SIDE: Grid of Cards */}
+    //             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+    //                 {[
+    //                     {
+    //                         icon: "🎨", title: "No more missed opportunities.", desc: "Without a steady stream of leads, it’s impossible to gain momentum. Profit Path keeps your funnel flowing." },
+    //                     { icon: "⚡", title: "Your team just got two-thirds bigger.", desc: "Our outreach specialists become an extension of your team. You focus on closing." },
+    //                     { icon: "🛡️", title: "Save time. Close faster.", desc: "Profit Path doesn’t just toss leads over the fence—we nurture them until the sales meeting." },
+    //                     { icon: "📱", title: "Right people, right time.", desc: "Profit Path’s database of half a billion data points holds the leads you need to grow." },
+    //                 ].map((item, i) => (
+    //                     <div
+    //                         key={i}
+    //                         className="flex flex-col items-center lg:items-start p-6 md:p-8 
+    //          bg-linear-to-br from-white/10 to-white/[0.02] 
+    //          backdrop-blur-xl border border-white/20 
+    //          rounded-3xl hover:border-white/40 hover:bg-white/10 
+    //          transition-all duration-500 group shadow-2xl 
+    //          text-center lg:text-left"
+    //                     >
+    //                         {/* Icon Container with Glass Effect */}
+    //                         <div className="text-2xl mb-6 flex items-center justify-center 
+    //               w-14 h-14 rounded-2xl bg-white/10 border border-white/10 
+    //               group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+    //                             {item.icon}
+    //                         </div>
 
-                            <h3 className="text-xl font-bold text-white mb-3 tracking-tight">
-                                {item.title}
-                            </h3>
+    //                         <h3 className="text-xl font-bold text-white mb-3 tracking-tight">
+    //                             {item.title}
+    //                         </h3>
 
-                            <p className="text-sm md:text-base text-zinc-400 leading-relaxed font-questrial">
-                                {item.desc}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        )
-    },
+    //                         <p className="text-sm md:text-base text-zinc-400 leading-relaxed font-questrial">
+    //                             {item.desc}
+    //                         </p>
+    //                     </div>
+    //                 ))}
+    //             </div>
+    //         </div>
+    //     )
+    // },
     {
         id: 2,
         bgColor: "#000",
@@ -91,8 +91,8 @@ const cards = [
                             key={i}
                             className="group flex flex-col sm:flex-row items-center sm:items-start gap-4 p-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl md:rounded-[2rem] transition-all duration-300 hover:bg-white/10 hover:border-white/30 lg:hover:tranzinc-x-2 text-center sm:text-left"
                         >
-                            <div className="shrink-0 w-6 h-6 rounded-xl bg-emerald-400 flex items-center justify-center shadow-[0_0_20px_rgba(52,211,153,0.3)] group-hover:scale-110 transition-transform">
-                                <svg className="w-5 h-5 text-emerald-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                            <div className="shrink-0 w-6 h-6 rounded-xl bg-zinc-400 flex items-center justify-center shadow-[0_0_20px_rgba(52,211,153,0.3)] group-hover:scale-110 transition-transform">
+                                <svg className="w-5 h-5 text-zinc-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
@@ -147,76 +147,76 @@ const cards = [
             </div>
         )
     },
-    {
-        id: 4,
-        bgColor: "#000",
-        renderContent: () => (
-            <div className="w-full max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                {/* LEFT SIDE */}
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <h2 className="text-5xl md:text-7xl lg:text-6xl font-black text-white leading-tight tracking-wider  mb-10">
-                        We secure <br /> sales meetings.
-                    </h2>
+    // {
+    //     id: 4,
+    //     bgColor: "#000",
+    //     renderContent: () => (
+    //         <div className="w-full max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    //             {/* LEFT SIDE */}
+    //             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+    //                 <h2 className="text-5xl md:text-7xl lg:text-6xl font-black text-white leading-tight tracking-wider  mb-10">
+    //                     We secure <br /> sales meetings.
+    //                 </h2>
 
-                    <div className="space-y-4 md:space-y-6 w-full">
-                        {[
-                            { label: "Revenue Growth", value: "+140%", detail: "Avg increase." },
-                            { label: "User Retention", value: "85%", detail: "Engagement." },
-                            { label: "Market Reach", value: "24", detail: "Global territories." },
-                        ].map((item, i) => (
-                            <button
-                                key={i}
-                                className="group w-full flex items-center justify-between p-5 md:p-6 
-                 bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl 
-                 hover:bg-white/10 hover:border-white/30 transition-all duration-300 
-                 cursor-pointer text-left"
-                            >
-                                {/* Left Side: Labels & Stats */}
-                                <div className="flex flex-col border-l-2 border-white/20 pl-6 group-hover:border-white transition-colors">
-                                    <span className="text-white/50  tracking-wider text-[15px] md:text-lg mb-1">
-                                        {item.label}
-                                    </span>
-                                    <div className="flex items-baseline gap-3">
-                                        <span className="text-2xl md:text-3xl text-white font-bold tracking-tight">
-                                            {item.value}
-                                        </span>
-                                        <span className="text-xs md:text-sm text-white/40 font-light italic">
-                                            {item.detail}
-                                        </span>
-                                    </div>
-                                </div>
+    //                 <div className="space-y-4 md:space-y-6 w-full">
+    //                     {[
+    //                         { label: "Revenue Growth", value: "+140%", detail: "Avg increase." },
+    //                         { label: "User Retention", value: "85%", detail: "Engagement." },
+    //                         { label: "Market Reach", value: "24", detail: "Global territories." },
+    //                     ].map((item, i) => (
+    //                         <button
+    //                             key={i}
+    //                             className="group w-full flex items-center justify-between p-5 md:p-6 
+    //              bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl 
+    //              hover:bg-white/10 hover:border-white/30 transition-all duration-300 
+    //              cursor-pointer text-left"
+    //                         >
+    //                             {/* Left Side: Labels & Stats */}
+    //                             <div className="flex flex-col border-l-2 border-white/20 pl-6 group-hover:border-white transition-colors">
+    //                                 <span className="text-white/50  tracking-wider text-[15px] md:text-lg mb-1">
+    //                                     {item.label}
+    //                                 </span>
+    //                                 <div className="flex items-baseline gap-3">
+    //                                     <span className="text-2xl md:text-3xl text-white font-bold tracking-tight">
+    //                                         {item.value}
+    //                                     </span>
+    //                                     <span className="text-xs md:text-sm text-white/40 font-light italic">
+    //                                         {item.detail}
+    //                                     </span>
+    //                                 </div>
+    //                             </div>
 
-                                {/* Right Side: Animated Arrow Button */}
-                                <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 
-                    rounded-full bg-white/10 border border-white/10 
-                    group-hover:bg-white group-hover:text-black transition-all duration-500">
-                                    <ArrowRight
-                                        className="w-5 h-5 transition-transform duration-500 ease-in-out group-hover:-rotate-45"
-                                    />
-                                </div>
-                            </button>
-                        ))}
-                    </div>
-                </div>
+    //                             {/* Right Side: Animated Arrow Button */}
+    //                             <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 
+    //                 rounded-full bg-white/10 border border-white/10 
+    //                 group-hover:bg-white group-hover:text-black transition-all duration-500">
+    //                                 <ArrowRight
+    //                                     className="w-5 h-5 transition-transform duration-500 ease-in-out group-hover:-rotate-45"
+    //                                 />
+    //                             </div>
+    //                         </button>
+    //                     ))}
+    //                 </div>
+    //             </div>
 
-                {/* RIGHT SIDE */}
-                <div className="flex flex-col items-center lg:items-end gap-8 w-full">
-                    <TalkToUsButton />
+    //             {/* RIGHT SIDE */}
+    //             <div className="flex flex-col items-center lg:items-end gap-8 w-full">
+    //                 <TalkToUsButton />
 
-                    <div className="relative w-full aspect-video sm:aspect-[4/3] bg-zinc-900 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
-                        <div className="w-full h-full flex items-center justify-center">
-                            <div className="text-white/10 text-7xl md:text-9xl font-black group-hover:scale-110 transition-transform duration-700">UI</div>
-                        </div>
-                        <div className="absolute bottom-0 inset-x-0 p-4 md:p-8 bg-black/60 backdrop-blur-md border-t border-white/10">
-                            <p className="text-white font-bold text-sm md:text-lg">Project Alpha: Transformation</p>
-                            <p className="text-white/50 text-[10px] md:text-sm italic">Jan 2026</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+    //                 <div className="relative w-full aspect-video sm:aspect-[4/3] bg-zinc-900 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl group">
+    //                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+    //                     <div className="w-full h-full flex items-center justify-center">
+    //                         <div className="text-white/10 text-7xl md:text-9xl font-black group-hover:scale-110 transition-transform duration-700">UI</div>
+    //                     </div>
+    //                     <div className="absolute bottom-0 inset-x-0 p-4 md:p-8 bg-black/60 backdrop-blur-md border-t border-white/10">
+    //                         <p className="text-white font-bold text-sm md:text-lg">Project Alpha: Transformation</p>
+    //                         <p className="text-white/50 text-[10px] md:text-sm italic">Jan 2026</p>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     )
+    // }
 ];
 
 const StackingCards = () => {

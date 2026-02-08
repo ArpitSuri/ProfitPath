@@ -140,13 +140,7 @@ const TermsAndConditions = () => {
                                 <div className="p-3 rounded-full bg-white/5 group-hover:bg-white group-hover:text-black transition-all">
                                     <Mail size={16} />
                                 </div>
-                                janneciofficial@gmail.com
-                            </a>
-                            <a href="mailto:jesus@profitpathgrowthpartners.com" className="group flex items-center gap-4 text-zinc-400 hover:text-white transition-all">
-                                <div className="p-3 rounded-full bg-white/5 group-hover:bg-white group-hover:text-black transition-all">
-                                    <Mail size={16} />
-                                </div>
-                                jesus@profitpathgrowthpartners.com
+                                sales@profitpathgrowthpartners.com
                             </a>
                         </div>
                     </div>

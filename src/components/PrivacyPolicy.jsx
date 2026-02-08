@@ -127,10 +127,10 @@ const PrivacyPolicy = () => {
                                 If you have any questions about this Privacy Policy or wish to discuss how your data is handled, please reach out to our team.
                             </p>
                             <a
-                                href="mailto:jack@profitpathsavings.com"
+                                href="mailto:sales@profitpathgrowthpartners.com"
                                 className="group inline-flex items-center gap-4 bg-white text-black px-8 py-4 rounded-full font-black text-xs tracking-wider hover:bg-zinc-500 hover:text-white transition-all"
                             >
-                                <Mail size={16} /> jack@profitpathsavings.com
+                                <Mail size={16} /> sales@profitpathgrowthpartners.com
                             </a>
                         </section>
 

@@ -10,6 +10,7 @@ import IndustriesSection from "../components/SmallBusinessComponents/IndustrySec
 import ResultsStats from "../components/SmallBusinessComponents/ResultStats"
 import SmallBusinessHero from "../components/SmallBusinessComponents/SmallBusinessHero"
 import TargetingOrbit from "../components/SmallBusinessComponents/TargetingOrbit"
+import Testimonials from "../components/TestimonialsComponent"
 
 
 
@@ -29,7 +30,8 @@ const SmallBusinessPage = () => {
             <ROIComponent />
             <CaseStudyCarousel />
             <ResultsStats />
-            <ContactSection />
+            {/* <ContactSection /> */}
+            <Testimonials />
             <Footer />
         </main>
     )

@@ -15,7 +15,7 @@ const CaseStudiesPage = () => {
             <CaseStudiesHero />
             <CompanyTray />
             <CaseStudiesSection />
-            <ContactSection />
+            {/* <ContactSection /> */}
             <Footer />
         </main>
     )

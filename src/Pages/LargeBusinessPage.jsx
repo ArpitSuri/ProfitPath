@@ -11,6 +11,7 @@ import CaseStudyCarousel from '../components/CaseStudyCrousal'
 import ContactSection from '../components/HomePageComponents/ContactSection'
 import ROIComponent from '../components/ROIPage'
 import LargeBusinessHero from '../components/largeBuinessComponents/LargeBusinessHero'
+import Testimonials from '../components/TestimonialsComponent'
 const LargeBusinessPage = () => {
   return (
     <main
@@ -26,7 +27,8 @@ const LargeBusinessPage = () => {
         <ROIComponent />
         <IndustriesSection />
         <CaseStudyCarousel />
-        <ContactSection />
+        {/* <ContactSection /> */}
+      <Testimonials/>
         
         <Footer />
         </main>

@@ -7,6 +7,7 @@ import ValuesCarousel from "../components/AboutUsPageComponent/ValueCrousal"
 import ContactSection from "../components/HomePageComponents/ContactSection"
 import Footer from "../components/HomePageComponents/Footer"
 import Navbar from "../components/HomePageComponents/Navbar"
+import Testimonials from "../components/TestimonialsComponent"
 
 const AboutUs = () => {
     return (
@@ -21,7 +22,8 @@ const AboutUs = () => {
             <AboutQuote />
             <ValuesCarousel />
             <TeamSection />
-            <ContactSection />
+            {/* <ContactSection /> */}
+            <Testimonials />
             <Footer />
         </main>
     )

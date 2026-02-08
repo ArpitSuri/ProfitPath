@@ -7,6 +7,7 @@ import Hero from '../components/HomePageComponents/Hero'
 import Navbar from '../components/HomePageComponents/Navbar'
 import ResultsStats from '../components/HomePageComponents/ResultStats'
 import StackingCards from '../components/HomePageComponents/StickyCardEffect'
+import Testimonials from '../components/TestimonialsComponent'
 
 const Home = () => {
   return (
@@ -26,7 +27,8 @@ const Home = () => {
         <ResultsStats />
         {/* <FeatureShowcase /> */}
         <CaseStudyScroll />
-        <ContactSection />
+        <Testimonials />
+        {/* <ContactSection /> */}
         <Footer />
       </div>
     </main>

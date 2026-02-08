@@ -24,7 +24,7 @@ const CareersPage = () => {
           <PerksSection />
           <TeamTestimonials />
           <JobOpenings />
-          <ContactSection />
+          {/* <ContactSection /> */}
           <Footer />
       </main>
   )

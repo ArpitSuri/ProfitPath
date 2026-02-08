@@ -13,6 +13,7 @@ import GrowthExperts from "../components/SmallBusinessComponents/GrowthExpert"
 import IndustriesSection from "../components/SmallBusinessComponents/IndustrySection"
 import ResultsStats from "../components/SmallBusinessComponents/ResultStats"
 import SmallBusinessHero from "../components/SmallBusinessComponents/SmallBusinessHero"
+import Testimonials from "../components/TestimonialsComponent"
 
 
 
@@ -35,7 +36,8 @@ const MediumBusinessPage = () => {
             <ResultsStats />
             <FeatureShowcase />
             <CaseStudyCarousel />
-            <ContactSection />
+            {/* <ContactSection /> */}
+            <Testimonials />
             <Footer />
         </main>
     )
