@@ -5,20 +5,20 @@ const ResultsStats = () => {
         {
             value: "$100M+",
             label: " Revenue Generated",
-            color: "border-cyan-400",
-            glow: "shadow-[0_0_20px_rgba(34,211,238,0.4)]",
+            color: "#fff",
+            glow: "#fff",
         },
         {
             value: "10000+",
             label: "Meetings Scheduled",
-            color: "border-indigo-500",
-            glow: "shadow-[0_0_20px_rgba(99,102,241,0.4)]",
+            color: "#fff",
+            glow: "#fff",
         },
         {
             value: "86%",
             label: "Client Retention Rate",
-            color: "border-purple-500",
-            glow: "shadow-[0_0_20px_rgba(168,85,247,0.4)]",
+            color: "#fff",
+            glow: "#fff",
         },
     ];
 
@@ -26,12 +26,12 @@ const ResultsStats = () => {
         <section className=" py-24 px-6 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 {/* Title Section */}
-                <span className="text-[12px] font-black uppercase tracking-[0.4em] text-zinc-600 mb-4 block">
-                    Deliveribles
-                </span>
+                <h2 className="text-white text-5xl md:text-7xl font-semibold mb-20 tracking-tight">
+                    Our Results<span className="text-zinc-500">.</span>
+                </h2>
 
                 {/* Stats Circle Grid */}
-                <div className="flex flex-wrap justify-center lg:justify-between gap-2 mt-4">
+                <div className="flex flex-wrap justify-center lg:justify-around gap-6 lg:gap-1">
                     {stats.map((stat, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div

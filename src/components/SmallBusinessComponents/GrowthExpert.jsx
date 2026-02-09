@@ -12,9 +12,9 @@ const ExpertCard = ({ title, icon, gridClass, infoText }) => {
                     <Info size={14} />
                 </div>
 
-                <div className="text-4xl filter grayscale group-hover:grayscale-0 transition-all duration-500 opacity-20 group-hover:opacity-100">
+                {/* <div className="text-4xl filter grayscale group-hover:grayscale-0 transition-all duration-500 opacity-20 group-hover:opacity-100">
                     {icon}
-                </div>
+                </div> */}
             </div>
 
             {/* HOVER CONTENT (The Text rendered on hover) */}
@@ -51,49 +51,74 @@ const GrowthExperts = () => {
                     </h2>
                 </div>
 
-                {/* 3x3 Bento Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-5 h-auto md:min-h-[900px]">
+                {/* 3x3 Bento Grid - Marketing Agency Edition */}
+                {/* <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-5 h-auto md:min-h-[900px]">
 
                     <ExpertCard
-                        title="Prospecting Strategist"
-                        icon="🎯"
-                        infoText="Specializes in cold outreach architecture and high-level funnel mapping."
+                        title="Brand Strategist"
+                        icon="💎"
+                        infoText="Crafts compelling brand identities and multi-channel positioning strategies."
                         gridClass="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2"
                     />
 
                     <ExpertCard
-                        title="Data Analyst"
-                        icon="📊"
-                        infoText="Deciphers market trends and campaign performance to guide real-time pivots."
+                        title="Performance Marketer"
+                        icon="📈"
+                        infoText="Optimizes ad spend across Meta, Google, and LinkedIn for maximum conversion."
                         gridClass="md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3"
                     />
 
                     <ExpertCard
-                        title="Tech Lead"
-                        icon="⚙️"
-                        infoText="Handles complex API integrations and ensures 99.9% uptime for growth tools."
+                        title="Creative Director"
+                        icon="🎨"
+                        infoText="Oversees high-converting visual assets and viral-ready video production."
                         gridClass="md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3"
                     />
 
                     <ExpertCard
-                        title="Account Manager"
-                        icon="👤"
-                        infoText="Your dedicated point of contact ensuring strategy aligns with business goals."
+                        title="Content Lead"
+                        icon="✍️"
+                        infoText="Directs SEO-driven storytelling and high-engagement social media copy."
                         gridClass="md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3"
                     />
 
                     <ExpertCard
-                        title="Compliance Officer"
-                        icon="🛡️"
-                        infoText="Maintains data privacy standards and ensures all outreach follows global laws."
+                        title="Retention Specialist"
+                        icon="🔄"
+                        infoText="Masterminds email automation and SMS flows to boost Customer Lifetime Value."
                         gridClass="md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4"
                     />
 
                     <ExpertCard
-                        title="Client Success Manager"
+                        title="Growth Analytics Lead"
                         icon="🚀"
-                        infoText="Focused on post-launch scaling and maximizing long-term client ROI."
+                        infoText="Connects the dots between attribution data and sustainable revenue scaling."
                         gridClass="md:col-start-2 md:col-end-4 md:row-start-3 md:row-end-4"
+                    />
+
+                </div> */}
+                {/* 3-Column Bento Grid - Core Team */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 h-auto md:min-h-[400px]">
+
+                    <ExpertCard
+                        title="Onboarding Specialist"
+                        icon="✨"
+                        infoText="Ensuring a seamless transition and rapid technical setup so your campaigns launch without a hitch."
+                        gridClass="md:col-span-1"
+                    />
+
+                    <ExpertCard
+                        title="Account Manager"
+                        icon="🤝"
+                        infoText="Your dedicated strategic partner, ensuring every campaign aligns perfectly with your business KPIs."
+                        gridClass="md:col-span-1"
+                    />
+
+                    <ExpertCard
+                        title="Inbox Manager"
+                        icon="📥"
+                        infoText="Managing real-time lead engagement and appointment setting to turn interest into revenue."
+                        gridClass="md:col-span-1"
                     />
 
                 </div>

@@ -562,7 +562,7 @@ const ROICalculator = () => {
                         />
                     </div>
 
-                    <button className="w-full bg-white text-black py-4 rounded-xl font-black text-[10px] uppercase tracking-[0.2em] hover:bg-zinc-200 transition-all active:scale-[0.98]">
+                    <button className="w-full bg-white text-black py-4 rounded-xl font-black text-[14px] cursor-pointer  tracking-[0.2em] hover:bg-zinc-200 transition-all active:scale-[0.98]">
                         Generate Full Analysis
                     </button>
                 </div>

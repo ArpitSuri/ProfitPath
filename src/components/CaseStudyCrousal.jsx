@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
+
 // const caseStudies = [
 //     {
 //         id: 1,
@@ -24,13 +25,13 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Nassau Leadership",
 //             role: "Managing Partner"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=NP",
-//         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/1.jpg",
+//         image: "/CaseStudy/1.1.webp",
 //         layout: "text-left"
 //     },
 //     {
 //         id: 2,
-//         badge: "PRIVATE EQUITY",
+//         badge: "INVESTMENT BANKING",
 //         company: "Kadenwood Group",
 //         location: "United States",
 //         description: "Built a $100M+ acquisition pipeline within 12 months by automating outreach to lower-mid market business owners.",
@@ -50,8 +51,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Kadenwood Team",
 //             role: "Acquisitions"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=KG",
-//         image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2073&auto=format&fit=crop",
+//         logo: "/CaseStudy/2.png",
+//         image: "/CaseStudy/2.1.png",
 //         layout: "text-right"
 //     },
 //     {
@@ -76,8 +77,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "National Lecithin",
 //             role: "Operations"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=NL",
-//         image: "https://images.unsplash.com/photo-1558444479-c84824d4858e?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/3.avif",
+//         image: "/CaseStudy/3.1.avif",
 //         layout: "text-left"
 //     },
 //     {
@@ -102,8 +103,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "SweatDecks Leadership",
 //             role: "Operations"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=SD",
-//         image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/4.avif",
+//         image: "/CaseStudy/4.1.jpg",
 //         layout: "text-right"
 //     },
 //     {
@@ -128,8 +129,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Spikeball B2B Division",
 //             role: "Institutional Sales"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=SB",
-//         image: "https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=2070&auto=format&fit=crop",
+//         logo: "https://imgs.search.brave.com/MCMF7BR8JpGHId7DvLQ_EGxYkY293mckaP9JUS-D_PA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDkxNjU2YTRk/YzI1YzMxMTJhZjEy/OWFlMTk2NzU4ZWNk/NGQ0N2IwYjZjMmIz/M2JjZjAyOGZjMzhj/NTAwZmJhZS9zcGlr/ZWJhbGwuY29tLw",
+//         image: "/CaseStudy/5.1.webp",
 //         layout: "text-left"
 //     },
 //     {
@@ -180,8 +181,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "BottomLine Leadership",
 //             role: "Financial Consulting"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=BLC",
-//         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072&auto=format&fit=crop",
+//         logo: "/CaseStudy/7.jpg",
+//         image: "/CaseStudy/7.1.jpg",
 //         layout: "text-left"
 //     },
 //     {
@@ -206,8 +207,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "LJM Leadership",
 //             role: "Supply Chain Strategy"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=LJM",
-//         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/8.png",
+//         image: "/CaseStudy/8.1.jpg",
 //         layout: "text-right"
 //     },
 //     {
@@ -232,8 +233,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Ben Kaplan",
 //             role: "CEO & Co-Founder"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=NAC",
-//         image: "https://images.unsplash.com/photo-1549923746-c50264f39a18?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/9.png",
+//         image: "/CaseStudy/9.svg",
 //         layout: "text-left"
 //     },
 //     {
@@ -258,7 +259,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Clever Health Team",
 //             role: "Benefits Brokerage"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=CH",
+//         logo: "/CaseStudy/10.png",
 //         image: "https://images.unsplash.com/photo-1573496130141-2097af01395c?q=80&w=2070&auto=format&fit=crop",
 //         layout: "text-right"
 //     },
@@ -284,8 +285,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Predictive Safety Leadership",
 //             role: "Enterprise Growth"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=PS",
-//         image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/11.png",
+//         image: "/CaseStudy/11.1.jpeg",
 //         layout: "text-left"
 //     },
 //     {
@@ -310,7 +311,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Raistone Strategic Growth",
 //             role: "Fintech Partnerships"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=RS",
+//         logo: "/CaseStudy/12.png",
 //         image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop",
 //         layout: "text-right"
 //     },
@@ -336,7 +337,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Crescent Growth Team",
 //             role: "FinTech Operations"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=CR",
+//         logo: "/CaseStudy/13.png",
 //         image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop",
 //         layout: "text-left"
 //     },
@@ -362,8 +363,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "BigThink Leadership",
 //             role: "Financial Strategy"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=BTC",
-//         image: "https://images.unsplash.com/photo-1551288049-bbda3865c670?q=80&w=2070&auto=format&fit=crop",
+//         logo: "/CaseStudy/14.png",
+//         image: "/CaseStudy/14.1.webp",
 //         layout: "text-right"
 //     },
 //     {
@@ -388,166 +389,10 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 //             author: "Tomer Brenner",
 //             role: "Founder & Managing Director"
 //         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=AP",
+//         logo: "/CaseStudy/15.png",
 //         image: "https://images.unsplash.com/photo-1444676632488-26a136c45b9b?q=80&w=2070&auto=format&fit=crop",
 //         layout: "text-left"
 //     },
-//     {
-//         id: 16,
-//         badge: "EMERGING GROWTH & FUNDRAISING",
-//         company: "AgTech Startup",
-//         location: "San Francisco, California",
-//         description: "Secured 18 qualified investor meetings in 90 days, achieving a 22% booking rate with specialized Ag VCs.",
-//         challenge: "Lacked investor relationships beyond immediate network; needed Series A capital.",
-//         solution: [
-//             "100,000 monthly emails to Ag investment firms and family offices",
-//             "2-3 sentence sequences focusing on pilot program ROI metrics",
-//             "Targeted GPs and Associates for maximum fund penetration"
-//         ],
-//         results: {
-//             revenueGrowth: "18 qualified investor meetings in 90 days",
-//             leadGen: "22% meeting booking rate from interested responses",
-//             highlights: "Connected with 8 Ag-focused firms and 3 family offices"
-//         },
-//         testimonial: {
-//             quote: "Bypassed the noise and secured direct lines to specialized Series A capital.",
-//             author: "AgTech Founding Team",
-//             role: "Precision Agriculture"
-//         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=AG",
-//         image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=2068&auto=format&fit=crop",
-//         layout: "text-right"
-//     },
-//     {
-//         id: 17,
-//         badge: "MARKETING AUTOMATION & SAAS",
-//         company: "MarTech Startup",
-//         location: "United States",
-//         description: "Generated 67 qualified investor meetings with Tier-1 VCs including Sequoia and a16z.",
-//         challenge: "Network limited to local angels; needed institutional capital for scaling.",
-//         solution: [
-//             "200,000 monthly emails to 10,000+ VC partners nationwide",
-//             "Systematic outreach to Tier-1 Enterprise Software/SaaS investors",
-//             "Messaging highlighting ARR growth and retention metrics"
-//         ],
-//         results: {
-//             revenueGrowth: "67 qualified investor meetings in 12 months",
-//             leadGen: "Engaged 28 Tier-1 enterprise software VCs",
-//             highlights: "Engagement at Sequoia, a16z, Bessemer, and Accel"
-//         },
-//         testimonial: {
-//             quote: "Engaged the most prestigious institutional investors in the world.",
-//             author: "MarTech Founding Team",
-//             role: "SaaS Growth"
-//         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=MT",
-//         image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop",
-//         layout: "text-left"
-//     },
-//     {
-//         id: 18,
-//         badge: "MEDTECH & REMOTE MONITORING",
-//         company: "MedTech Startup",
-//         location: "Austin, Texas",
-//         description: "Raised $3M by securing 29 investor meetings in 180 days using clinical outcome data.",
-//         challenge: "Struggled to move beyond warm introductions despite FDA-cleared technology.",
-//         solution: [
-//             "Outreach to healthcare VCs, strategic investors, and CVCs",
-//             "Targeted hospital systems as potential investment partners",
-//             "Emphasized FDA clearance and clinical efficacy in messaging"
-//         ],
-//         results: {
-//             revenueGrowth: "$3M capital raised",
-//             leadGen: "29 qualified investor meetings in 6 months",
-//             highlights: "Engaged 12 institutional funds and 4 corporate venture arms"
-//         },
-//         testimonial: {
-//             quote: "Bypassed gatekeepers to secure institutional interest needed to scale.",
-//             author: "MedTech Founding Team",
-//             role: "Healthcare Innovation"
-//         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=MT",
-//         image: "https://images.unsplash.com/photo-1576091160550-2173dad99a01?q=80&w=2070&auto=format&fit=crop",
-//         layout: "text-right"
-//     },
-//     {
-//         id: 19,
-//         badge: "FINTECH & SMB LENDING",
-//         company: "FinTech Startup",
-//         location: "New York, New York",
-//         description: "Secured 15 investor meetings and 8 strategic banking partnerships in 90 days.",
-//         challenge: "Needed capital and banking partnerships simultaneously with limited traditional success.",
-//         solution: [
-//             "Parallel campaigns for financial services VCs and community banks",
-//             "Highlighted loan performance metrics and SMB success rates",
-//             "Positioned platform as strategic asset for traditional bank modernization"
-//         ],
-//         results: {
-//             revenueGrowth: "15 investor meetings in 90 days",
-//             leadGen: "8 strategic partner meetings with banks and credit unions",
-//             highlights: "Engaged 4 community banks for partnership discussions"
-//         },
-//         testimonial: {
-//             quote: "Found the banking partners needed to scale our lending volume.",
-//             author: "FinTech Founding Team",
-//             role: "Lending Operations"
-//         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=FT",
-//         image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c02?q=80&w=2070&auto=format&fit=crop",
-//         layout: "text-left"
-//     },
-//     {
-//         id: 20,
-//         badge: "CLEANTECH & ENERGY STORAGE",
-//         company: "CleanTech Startup",
-//         location: "Denver, Colorado",
-//         description: "Raised $2.1M and secured 39 climate investor meetings leveraging regulatory incentives.",
-//         challenge: "Difficulties reaching climate-focused investors and industrial strategic partners.",
-//         solution: [
-//             "100,000 monthly emails to climate VCs and CVC arms",
-//             "Targeted industrial manufacturers with venture divisions",
-//             "Messaging around regulatory incentives (IRA) and market timing"
-//         ],
-//         results: {
-//             revenueGrowth: "$2.1M capital raised",
-//             leadGen: "39 qualified investor meetings in 240 days",
-//             highlights: "Engaged 14 climate-focused firms and 5 industrial CVCs"
-//         },
-//         testimonial: {
-//             quote: "Turned technical pitch into a timely financial opportunity.",
-//             author: "CleanTech Founding Team",
-//             role: "Energy Innovation"
-//         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=CT",
-//         image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2072&auto=format&fit=crop",
-//         layout: "text-right"
-//     },
-//     {
-//         id: 21,
-//         badge: "EDTECH & CORPORATE TRAINING",
-//         company: "EdTech Startup",
-//         location: "Chicago, Illinois",
-//         description: "Raised $1.2M and secured 17 enterprise investor meetings in 90 days using SaaS metrics.",
-//         challenge: "Couldn't access Tier-1 enterprise investors despite strong B2B metrics.",
-//         solution: [
-//             "Outreach to enterprise software and workforce development VCs",
-//             "Identified HR technology strategic investors for synergy",
-//             "Highlighted customer acquisition and retention data"
-//         ],
-//         results: {
-//             revenueGrowth: "$1.2M capital raised",
-//             leadGen: "17 qualified investor meetings in 90 days",
-//             highlights: "19% booking rate; engaged 6 enterprise software firms"
-//         },
-//         testimonial: {
-//             quote: "Leading with retention data secured meetings previously unreachable.",
-//             author: "EdTech Founding Team",
-//             role: "Workforce Development"
-//         },
-//         logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=ED",
-//         image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
-//         layout: "text-left"
-//     }
 // ];
 
 
@@ -580,7 +425,7 @@ const caseStudies = [
     },
     {
         id: 2,
-        badge: "PRIVATE EQUITY",
+        badge: "INVESTMENT BANKING",
         company: "Kadenwood Group",
         location: "United States",
         description: "Built a $100M+ acquisition pipeline within 12 months by automating outreach to lower-mid market business owners.",
@@ -704,8 +549,8 @@ const caseStudies = [
             author: "AuctionIQ Leadership",
             role: "Strategy & Operations"
         },
-        logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=AIQ",
-        image: "https://images.unsplash.com/photo-1454165833267-02886c57ed23?q=80&w=2070&auto=format&fit=crop",
+        logo: "/CaseStudy/6.webp",
+        image: "/CaseStudy/6.1.webp",
         layout: "text-right"
     },
     {
@@ -809,7 +654,7 @@ const caseStudies = [
             role: "Benefits Brokerage"
         },
         logo: "/CaseStudy/10.png",
-        image: "https://images.unsplash.com/photo-1573496130141-2097af01395c?q=80&w=2070&auto=format&fit=crop",
+        image: "/CaseStudy/10.1.jpg",
         layout: "text-right"
     },
     {
@@ -861,7 +706,7 @@ const caseStudies = [
             role: "Fintech Partnerships"
         },
         logo: "/CaseStudy/12.png",
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop",
+        image: "/CaseStudy/12,1.png",
         layout: "text-right"
     },
     {
@@ -942,7 +787,7 @@ const caseStudies = [
         image: "https://images.unsplash.com/photo-1444676632488-26a136c45b9b?q=80&w=2070&auto=format&fit=crop",
         layout: "text-left"
     },
-]; 
+];
 const CaseStudyCarousel = () => {
     const scrollRef = useRef(null);
 

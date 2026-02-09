@@ -85,7 +85,7 @@ const cards = [
                     {[
                         { title: "Find them through Profit Path.", desc: "We use our database to target key decision-makers with the authority and budget to act with 94% of sales meetings sat." },
                         { title: "Our experts, your experts.", desc: "Sales prospecting needs specialist skills many in-house teams lack. Profit Path provides expert support with decades of combined sales experience." },
-                        { title: "We open, you close.", desc: "ISalespeople spend only 34% of their time selling. Profit Path delivers high-quality, ready-to-close leads straight into your CRM, freeing up time to close more deals." },
+                        { title: "We open, you close.", desc: "Salespeople spend only 34% of their time selling. Profit Path delivers high-quality, ready-to-close leads straight into your CRM, freeing up time to close more deals." },
                     ].map((item, i) => (
                         <div
                             key={i}
@@ -126,7 +126,6 @@ const cards = [
 
                     <div className="space-y-8 max-w-md">
                         {[
-                            { title: "Data-Driven Strategy", desc: "We can’t predict the future, but our 10+ years experience can give a confident estimate." },
                             { title: "Instant Projections", desc: "Use our ROI calculator to find out how Profit Path maximises your sales pipeline's potential." }
                         ].map((point, i) => (
                             <div key={i} className="group">
@@ -310,71 +309,3 @@ const StackingCards = () => {
 
 export default StackingCards;
 
-
-
-//     const cardsRef = useRef([]);
-
-//     useLayoutEffect(() => {
-//         let ctx = gsap.context(() => {
-//             const cardElements = cardsRef.current;
-
-//             cardElements.forEach((card, index) => {
-//                 // Determine if we are on mobile to adjust pinning behavior
-//                 const isMobile = window.innerWidth < 1024;
-
-//                 ScrollTrigger.create({
-//                     trigger: card,
-//                     start: "top top",
-//                     // On mobile, if the content is taller than the screen, 
-//                     // we don't want to pin it indefinitely or it will cut off.
-//                     pin: true,
-//                     pinSpacing: false,
-//                     endTrigger: containerRef.current,
-//                     end: "bottom bottom",
-//                     invalidateOnRefresh: true,
-//                 });
-
-//                 // Subtle scale-down/fade effect for the card underneath
-//                 if (index < cardElements.length - 1) {
-//                     gsap.to(card, {
-//                         scrollTrigger: {
-//                             trigger: cardElements[index + 1],
-//                             start: "top bottom",
-//                             end: "top top",
-//                             scrub: true,
-//                         },
-//                         scale: 0.95, // Slight scale for depth
-//                         opacity: 0.5,
-//                         ease: "none"
-//                     });
-//                 }
-//             });
-//         }, containerRef);
-
-//         return () => ctx.revert(); // Clean up GSAP
-//     }, []);
-
-//     return (
-//         <div ref={containerRef} className="relative w-full bg-black">
-//             {cards.map((card, index) => (
-//                 <section
-//                     key={card.id}
-//                     ref={el => (cardsRef.current[index] = el)}
-//                     // CHANGED: h-screen to min-h-screen and added responsive padding
-//                     className="w-full min-h-screen lg:h-screen flex items-center justify-center overflow-hidden py-16 md:py-20 lg:py-0"
-//                     style={{
-//                         backgroundColor: card.bgColor,
-//                         zIndex: index + 1
-//                     }}
-//                 >
-//                     {/* Inner wrapper to handle scrolling content if it exceeds height */}
-//                     <div className="w-full h-full flex items-center justify-center overflow-y-auto lg:overflow-visible">
-//                         {card.renderContent()}
-//                     </div>
-//                 </section>
-//             ))}
-//         </div>
-//     );
-// };
-
-// export default StackingCards;

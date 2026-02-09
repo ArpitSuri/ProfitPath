@@ -33,7 +33,7 @@ const projects = [
     },
     {
         id: 2,
-        badge: "PRIVATE EQUITY",
+        badge: "INVESTMENT BANKING",
         company: "Kadenwood Group",
         location: "United States",
         description: "Built a $100M+ acquisition pipeline within 12 months by automating outreach to lower-mid market business owners.",

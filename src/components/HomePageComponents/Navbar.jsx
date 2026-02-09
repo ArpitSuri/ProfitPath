@@ -42,7 +42,6 @@ const Navbar = () => {
 
     const navLinks = [
         { name: "About Us", href: "/who-we-are" },
-        { name: "Leakage Calculator", href: "/leakage-calculator" },
         {
             name: "Services",
             href: "#",
@@ -120,7 +119,7 @@ const Navbar = () => {
                             <div key={link.name} className="relative group py-2">
                                 <button
                                     onClick={() => !link.hasDropdown && navigate(link.href)}
-                                    className="text-[12px] lg:text-[13px] tracking-wider text-white/60 hover:text-white transition-colors flex items-center gap-1 font-medium"
+                                    className="text-[12px] lg:text-[13px] tracking-wider text-white/60 hover:text-white transition-colors flex items-center gap-1 font-medium cursor-pointer"
                                 >
                                     {link.name} {link.hasDropdown && <ChevronDown size={10} />}
                                 </button>

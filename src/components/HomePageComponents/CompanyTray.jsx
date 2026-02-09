@@ -23,14 +23,14 @@ const CompanyTray = () => {
 
             <div className="max-w-7xl mx-auto px-6 text-left">
                 <h2 className="text-white/40 text-sm font-bold tracking-wider mb-6">
-                    WE SET CALLS WITH
+                We've set meetings with
                 </h2>
             </div>
 
             {/* The Tray Container */}
             <div className="relative flex items-center">
                 {/* Left & Right Side Blurs for "Fade" effect */}
-                <div className="absolute inset-y-0 left-0 w-[10%] bg-gradient-to-r from-black to-black z-10"></div>
+                <div className="absolute inset-y-0 left-0 w-[15%] bg-gradient-to-r from-black to-transparent z-10"></div>
                 <div className="absolute inset-y-0 right-0 w-[15%] bg-gradient-to-l from-black to-transparent z-10"></div>
 
                 {/* Scrolling Track */}

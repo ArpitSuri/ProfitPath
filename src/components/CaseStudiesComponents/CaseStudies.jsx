@@ -706,8 +706,8 @@ const caseStudies = [
             author: "AuctionIQ Leadership",
             role: "Strategy & Operations"
         },
-        logo: "https://via.placeholder.com/60x60/3d3d3d/ffffff?text=AIQ",
-        image: "https://images.unsplash.com/photo-1454165833267-02886c57ed23?q=80&w=2070&auto=format&fit=crop",
+        logo: "/CaseStudy/6.webp",
+        image: "/CaseStudy/6.1.webp",
         layout: "text-right"
     },
     {
@@ -811,7 +811,7 @@ const caseStudies = [
             role: "Benefits Brokerage"
         },
         logo: "/CaseStudy/10.png",
-        image: "https://images.unsplash.com/photo-1573496130141-2097af01395c?q=80&w=2070&auto=format&fit=crop",
+        image: "/CaseStudy/10.1.jpg",
         layout: "text-right"
     },
     {
@@ -863,7 +863,7 @@ const caseStudies = [
             role: "Fintech Partnerships"
         },
         logo: "/CaseStudy/12.png",
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop",
+        image: "/CaseStudy/12,1.png",
         layout: "text-right"
     },
     {

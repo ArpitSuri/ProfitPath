@@ -35,19 +35,19 @@ export default function  Hero() {
                     <div className="flex flex-col gap-6 w-full md:w-3/5 items-center text-center md:items-start md:text-left">
                         {/* 1. Stat Badge */}
                         <span className="rounded-full border border-white/10 px-5 py-2 text-[10px] md:text-xs text-white/80 tracking-[0.2em] uppercase flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm shadow-xl w-fit">
-                            <div className="flex items-center justify-center h-5 w-5 rounded-full bg-emerald-400">
+                            <div className="flex items-center justify-center h-5 w-5 rounded-full bg-zinc-400">
                                 <Check className="h-3 w-3 text-black stroke-3" />
                             </div>
                             <span className="font-questrial">
-                                $41m attributed revenue <span className="mx-2 opacity-30">•</span> 31k meetings
+                                $100m attributed revenue <span className="mx-2 opacity-30">•</span> 10k+ meetings
                             </span>
                         </span>
 
                         {/* 2. Main Heading */}
                         <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] font-questrial tracking-tight text-white">
-                            Accelerating Your Pipeline<br className="hidden md:block" /> To <br />
-                            <span className="inline-block mt-4 border border-white/40 py-2 px-1 rounded-3xl font-light bg-white/10 backdrop-blur-md text-white whitespace-nowrap">
-                                Premium Partnerships.
+                            Connecting You <br className="hidden md:block" /> To Your <br />
+                            <span className="inline-block mt-4 border border-white/40 py-2 px-4 rounded-3xl font-light bg-white/10 backdrop-blur-md text-white whitespace-nowrap">
+                                Dream Client.
                             </span>
                         </h1>
 
@@ -58,7 +58,7 @@ export default function  Hero() {
 
                         {/* 4. CTA Group */}
                         <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto pt-4">
-                            <button className="group bg-white text-black px-8 lg:px-10 py-4 lg:py-5 font-questrial rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105 font-bold active:scale-95 cursor-pointer tracking-widest flex items-center justify-center gap-2 text-sm lg:text-base">
+                            <button className="group bg-white text-black px-8 lg:px-10 py-4 lg:py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105 font-bold active:scale-95 cursor-pointer tracking-widest flex items-center justify-center gap-2 text-sm lg:text-lg font-sans">
                                 Schedule a Demo
                             </button>
                         </div>

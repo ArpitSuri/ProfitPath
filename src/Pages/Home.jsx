@@ -1,4 +1,5 @@
 import CaseStudyScroll from '../components/HomePageComponents/CaseStudy'
+import CaseStudyCard from '../components/HomePageComponents/CaseStudyCard'
 import CompanyTray from '../components/HomePageComponents/CompanyTray'
 import ContactSection from '../components/HomePageComponents/ContactSection'
 import FeatureShowcase from '../components/HomePageComponents/FeatureShowCase'
@@ -26,7 +27,8 @@ const Home = () => {
         <StackingCards />
         <ResultsStats />
         {/* <FeatureShowcase /> */}
-        <CaseStudyScroll />
+        {/* <CaseStudyScroll /> */}
+        <CaseStudyCard />
         <Testimonials />
         {/* <ContactSection /> */}
         <Footer />

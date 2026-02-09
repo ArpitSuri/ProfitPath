@@ -20,9 +20,9 @@ const CareersPage = () => {
           <CareerHero />
           <WhyWorkWithUs/>
           <WorkingAtProfitPath />
-          <TeamMoments />
+          {/* <TeamMoments /> */}
           <PerksSection />
-          <TeamTestimonials />
+          {/* <TeamTestimonials /> */}
           <JobOpenings />
           {/* <ContactSection /> */}
           <Footer />

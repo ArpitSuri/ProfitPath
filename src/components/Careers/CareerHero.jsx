@@ -21,7 +21,7 @@ const CareerHero = () => {
     ];
 
     return (
-        <section className="w-full min-h-screen  text-white py-24 px-6 md:px-12 flex flex-col items-center overflow-hidden">
+        <section className="w-full text-white py-24 px-6 md:px-12 flex flex-col items-center overflow-hidden">
             <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
 
                 {/* LEFT SIDE: Typography */}
@@ -30,7 +30,7 @@ const CareerHero = () => {
                         Careers
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-black leading-[0.85] tracking-wider ">
+                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.85] tracking-wider ">
                         Join our <br />
                         <span className="text-zinc-700">Team.</span> <br />
                         
@@ -40,9 +40,9 @@ const CareerHero = () => {
                 </div>
 
                 {/* RIGHT SIDE: Image Collage */}
-                <div className="w-full lg:w-1/2 flex gap-4 md:gap-6 justify-center lg:justify-end h-[600px]">
+                {/* <div className="w-full lg:w-1/2 flex gap-4 md:gap-6 justify-center lg:justify-end h-[600px]">
 
-                    {/* Column 1 */}
+                    
                     <div className="flex flex-col gap-4 md:gap-6 self-center transform -translate-y-12">
                         <div className="w-60 md:w-56 h-72 md:h-96 rounded-2xl overflow-hidden border border-white/5 grayscale hover:grayscale-0 transition-all duration-700">
                             <img src={images[0].url} className="w-full h-full object-cover" alt="Team 1" />
@@ -52,7 +52,7 @@ const CareerHero = () => {
                         </div>
                     </div>
 
-                    {/* Column 2 */}
+                    
                     <div className="flex flex-col gap-4 md:gap-6 self-center transform translate-y-12">
                         <div className="w-40 md:w-56 h-48 md:h-64 rounded-2xl overflow-hidden border border-white/5 grayscale hover:grayscale-0 transition-all duration-700">
                             <img src={images[3].url} className="w-full h-full object-cover" alt="Team 3" />
@@ -62,7 +62,7 @@ const CareerHero = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
             </div>
         </section>

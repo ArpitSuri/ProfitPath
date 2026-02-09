@@ -100,7 +100,7 @@ const Footer = () => {
                                 <button
                                     key={link.name}
                                     onClick={() => handleNavigation(link.path)}
-                                    className="text-zinc-400 hover:text-white transition-colors text-lg text-left w-fit"
+                                    className="text-zinc-400 hover:text-white transition-colors text-lg text-left w-fit cursor-pointer"
                                 >
                                     {link.name}
                                 </button>
@@ -116,7 +116,6 @@ const Footer = () => {
                             <p className="text-zinc-500 text-sm">8 The Green, STE A, Dover, DE 19901</p>
                         </div>
                         <div>
-                            <h4 className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold mb-4">Follow Us</h4>
                             <div className="flex gap-6 lg:justify-end">
                                 <a
                                     href="https://www.linkedin.com/company/profitpathgrowth"
@@ -138,7 +137,7 @@ const Footer = () => {
                         <p onClick={() => handleNavigation('/privacy-policy')} className="hover:text-white transition-colors cursor-pointer">Privacy Policy</p>
                     </div>
                     <div className="text-zinc-600">
-                        ProfitPath &copy; {new Date().getFullYear()}. All Rights Reserved.
+                        ProfitPath &copy; May 2023. All Rights Reserved.
                     </div>
                 </div>
 

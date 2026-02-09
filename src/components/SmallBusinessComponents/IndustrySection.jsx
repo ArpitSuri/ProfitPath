@@ -5,26 +5,39 @@ import { ChevronDown } from 'lucide-react';
 const industries = [
     {
         id: 1,
-        name: "E-commerce & Retail",
+        name: "Tech",
         // Replace these paths with your actual repo image paths
-        initialIcons: ["/companies/1.png", "/companies/2.png", "/companies/3.png", "/companies/4.png"],
-        expandedIcons: ["/companies/5.png", "/companies/6.png", "/companies/7.png", "/companies/8.png"],
-        description: "Scale your online storefront with high-performance funnels, integrated payment systems, and data-driven customer retention strategies designed for the modern shopper."
+        initialIcons: ["/Industries/1.svg", "/Industries/2.svg", "/Industries/3.svg", "/Industries/4.svg"],
+        expandedIcons: ["/Industries/5.svg", "/Industries/6.svg", "/Industries/7.svg", "/Industries/8.svg"],
+        description: "Our database is full of decision makers in the Tech industry.Here are a few of the Tech giants we’ve delivered to our clients…"
     },
     {
         id: 2,
-        name: "Fintech & Banking",
-        initialIcons: ["/companies/1.png", "/companies/2.png", "/companies/3.png", "/companies/4.png"],
-        expandedIcons: ["/companies/5.png", "/companies/6.png", "/companies/7.png", "/companies/8.png"],
-        description: "Secure, compliant, and user-centric financial platforms. We build trust through precision engineering and world-class security protocols for digital assets."
+        name: "Retail",
+        initialIcons: ["/Industries/9.svg", "/Industries/10.svg", "/Industries/11.svg", "/Industries/12.svg"],
+        expandedIcons: ["/Industries/13.svg", "/Industries/14.svg", "/Industries/15.svg", "/Industries/16.svg"],
+        description: "Profit Path’s database is packed with contacts for your B2B to speak to.We schedule meetings for you with decision makers from companies like…"
     },
     {
         id: 3,
-        name: "SaaS & Tech",
-        initialIcons: ["/companies/1.png", "/companies/2.png", "/companies/3.png", "/companies/4.png"],
-        expandedIcons: ["/companies/5.png", "/companies/6.png", "/companies/7.png", "/companies/8.png"],
-        description: "Accelerate your software-as-a-service growth. From complex API integrations to intuitive dashboard designs that reduce churn and increase LTV."
-    }
+        name: "Software & IT",
+        initialIcons: ["/Industries/17.svg", "/Industries/18.svg", "/Industries/19.svg", "/Industries/20.svg"],
+        expandedIcons: ["/Industries/21.svg", "/Industries/22.svg", "/Industries/23.svg", "/Industries/24.svg"],
+        description: "SaaS, industry software, web or app devs, IT security, consultancies – you name them, we know them.Our database is full of Software & IT prospects for you to target, such as…"
+    },
+    {
+        id: 4,
+        name: "Manufacturing",
+        initialIcons: ["/Industries/25.svg", "/Industries/26.svg", "/Industries/27.svg", "/Industries/28.svg"],
+        expandedIcons: ["/Industries/29.svg", "/Industries/30.svg", "/Industries/31.svg", "/Industries/32.svg"],
+        description: "We have a database full of decision-makers in the Manufacturing industry for you to tap into through our highly-targeted outbound campaigns.Let us connect you with big names like…"
+    },
+    {
+        id: 5,
+        name: "& many more industries!",
+        initialIcons: ["/Industries/33.svg", "/Industries/34.svg", "/Industries/35.svg", "/Industries/36.svg"],
+        expandedIcons: ["/Industries/37.svg", "/Industries/38.svg", "/Industries/39.svg", "/Industries/40.svg"],
+    },
 ];
 
 const IndustryItem = ({ industry }) => {
@@ -68,7 +81,7 @@ const IndustryItem = ({ industry }) => {
                             key={idx}
                             src={src}
                             alt="industry icon"
-                            className="w-24 h-24 object-contain filter grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500"
+                            className="w-30 h-30 object-contain filter grayscale brightness-70 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500"
                         />
                     ))}
                 </div>
@@ -98,7 +111,7 @@ const IndustryItem = ({ industry }) => {
                                     key={idx}
                                     src={src}
                                     alt="capability icon"
-                                    className="w-14 h-14 lg:w-24 lg:h-24 object-contain hover:scale-110 transition-transform cursor-default"
+                                    className="w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-110 transition-transform cursor-default"
                                 />
                             ))}
                         </div>
@@ -116,13 +129,13 @@ const IndustriesSection = () => {
                 {/* Badge */}
                 <div className="mb-12">
                     <span className="px-4 py-1.5 rounded-full text-white/70 text-[12px] font-black ">
-                        Industries We Scale
+                        Industries 
                     </span>
                 </div>
 
                 {/* List Header */}
                 <div className="mb-8 flex justify-between items-end border-b border-white/10 pb-4">
-                    <h2 className="text-white text-3xl font-bold tracking-wider">Industry Segment</h2>
+                    <h2 className="text-white text-3xl font-bold tracking-wider"> We work within.</h2>
                     <h2 className="hidden md:block text-zinc-600 text-lg font-bold tracking-wider">Key Drivers</h2>
                 </div>
 

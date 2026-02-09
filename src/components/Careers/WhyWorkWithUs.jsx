@@ -16,20 +16,20 @@ const WhyWorkWithUs = () => {
 
                     {/* LEFT SIDE: THE IMAGE */}
                     <div className="w-full lg:w-1/2">
-                        <div className="relative group rounded-[3rem] overflow-hidden border border-white/5 bg-zinc-900 aspect-[4/5]">
+                        {/* <div className="relative group rounded-[3rem] overflow-hidden border border-white/5 bg-zinc-900 aspect-[4/5]">
                             <img
                                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
                                 alt="Our Workspace Culture"
                                 className="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                             />
-                            {/* Subtle Gradient Overlay */}
+                           
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
                             <div className="absolute bottom-10 left-10">
                                 <span className="text-xs font-black uppercase tracking-[0.3em] text-zinc-400">Our Culture</span>
                                 <h4 className="text-2xl font-bold uppercase tracking-tighter">Beyond the Screen.</h4>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* RIGHT SIDE: CONTENT */}
